@@ -1,0 +1,6211 @@
+{
+  "tz": "Asia/Jakarta",
+  "resources": [
+    {
+      "multiTrip": true,
+      "turnaroundDuration": "PT10M",
+      "id": "motor-01",
+      "vehicleProfile": {
+        "type": "motorcycle",
+        "avgSpeedKmh": 35
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 40
+      },
+      "skills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 30000,
+        "perKm": 1500,
+        "perHour": 25000
+      }
+    },
+    {
+      "multiTrip": true,
+      "turnaroundDuration": "PT10M",
+      "id": "motor-02",
+      "vehicleProfile": {
+        "type": "motorcycle",
+        "avgSpeedKmh": 35
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 40
+      },
+      "skills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 30000,
+        "perKm": 1500,
+        "perHour": 25000
+      }
+    },
+    {
+      "multiTrip": true,
+      "turnaroundDuration": "PT10M",
+      "id": "motor-03",
+      "vehicleProfile": {
+        "type": "motorcycle",
+        "avgSpeedKmh": 35
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 40
+      },
+      "skills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 30000,
+        "perKm": 1500,
+        "perHour": 25000
+      }
+    },
+    {
+      "multiTrip": true,
+      "turnaroundDuration": "PT10M",
+      "id": "motor-04",
+      "vehicleProfile": {
+        "type": "motorcycle",
+        "avgSpeedKmh": 35
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 40
+      },
+      "skills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 30000,
+        "perKm": 1500,
+        "perHour": 25000
+      }
+    },
+    {
+      "multiTrip": true,
+      "turnaroundDuration": "PT10M",
+      "id": "motor-05",
+      "vehicleProfile": {
+        "type": "motorcycle",
+        "avgSpeedKmh": 35
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 40
+      },
+      "skills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 30000,
+        "perKm": 1500,
+        "perHour": 25000
+      }
+    },
+    {
+      "multiTrip": true,
+      "turnaroundDuration": "PT10M",
+      "id": "motor-06",
+      "vehicleProfile": {
+        "type": "motorcycle",
+        "avgSpeedKmh": 35
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 40
+      },
+      "skills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 30000,
+        "perKm": 1500,
+        "perHour": 25000
+      }
+    },
+    {
+      "multiTrip": true,
+      "turnaroundDuration": "PT10M",
+      "id": "motor-07",
+      "vehicleProfile": {
+        "type": "motorcycle",
+        "avgSpeedKmh": 35
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 40
+      },
+      "skills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 30000,
+        "perKm": 1500,
+        "perHour": 25000
+      }
+    },
+    {
+      "multiTrip": true,
+      "turnaroundDuration": "PT10M",
+      "id": "motor-08",
+      "vehicleProfile": {
+        "type": "motorcycle",
+        "avgSpeedKmh": 35
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 40
+      },
+      "skills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 30000,
+        "perKm": 1500,
+        "perHour": 25000
+      }
+    },
+    {
+      "id": "mobil-01",
+      "vehicleProfile": {
+        "type": "van",
+        "avgSpeedKmh": 30
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 350
+      },
+      "skills": [
+        "ambient"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 120000,
+        "perKm": 3000,
+        "perHour": 35000
+      }
+    },
+    {
+      "id": "mobil-02",
+      "vehicleProfile": {
+        "type": "van",
+        "avgSpeedKmh": 30
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 350
+      },
+      "skills": [
+        "ambient"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 120000,
+        "perKm": 3000,
+        "perHour": 35000
+      }
+    },
+    {
+      "id": "mobil-03",
+      "vehicleProfile": {
+        "type": "van",
+        "avgSpeedKmh": 30
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 350
+      },
+      "skills": [
+        "ambient"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 120000,
+        "perKm": 3000,
+        "perHour": 35000
+      }
+    },
+    {
+      "id": "mobil-04",
+      "vehicleProfile": {
+        "type": "van",
+        "avgSpeedKmh": 30
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 350
+      },
+      "skills": [
+        "ambient"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 120000,
+        "perKm": 3000,
+        "perHour": 35000
+      }
+    },
+    {
+      "id": "mobil-05",
+      "vehicleProfile": {
+        "type": "van",
+        "avgSpeedKmh": 30
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 350
+      },
+      "skills": [
+        "ambient"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 120000,
+        "perKm": 3000,
+        "perHour": 35000
+      }
+    },
+    {
+      "id": "mobil-06",
+      "vehicleProfile": {
+        "type": "van",
+        "avgSpeedKmh": 30
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 350
+      },
+      "skills": [
+        "ambient"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 120000,
+        "perKm": 3000,
+        "perHour": 35000
+      }
+    },
+    {
+      "id": "truk-cdd-01",
+      "vehicleProfile": {
+        "type": "truck",
+        "avgSpeedKmh": 25
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 3000
+      },
+      "skills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 300000,
+        "perKm": 6000,
+        "perHour": 50000
+      }
+    },
+    {
+      "id": "truk-cdd-02",
+      "vehicleProfile": {
+        "type": "truck",
+        "avgSpeedKmh": 25
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 3000
+      },
+      "skills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 300000,
+        "perKm": 6000,
+        "perHour": 50000
+      }
+    },
+    {
+      "id": "truk-cdd-03",
+      "vehicleProfile": {
+        "type": "truck",
+        "avgSpeedKmh": 25
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 3000
+      },
+      "skills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 300000,
+        "perKm": 6000,
+        "perHour": 50000
+      }
+    },
+    {
+      "id": "truk-cdd-04",
+      "vehicleProfile": {
+        "type": "truck",
+        "avgSpeedKmh": 25
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 3000
+      },
+      "skills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 300000,
+        "perKm": 6000,
+        "perHour": 50000
+      }
+    },
+    {
+      "id": "truk-fuso-01",
+      "vehicleProfile": {
+        "type": "truck",
+        "avgSpeedKmh": 25
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 8000
+      },
+      "skills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 450000,
+        "perKm": 9000,
+        "perHour": 60000
+      }
+    },
+    {
+      "id": "truk-fuso-02",
+      "vehicleProfile": {
+        "type": "truck",
+        "avgSpeedKmh": 25
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 8000
+      },
+      "skills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 450000,
+        "perKm": 9000,
+        "perHour": 60000
+      }
+    },
+    {
+      "id": "truk-b3-01",
+      "vehicleProfile": {
+        "type": "truck",
+        "avgSpeedKmh": 25
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 3000
+      },
+      "skills": [
+        "hazmat"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 350000,
+        "perKm": 7000,
+        "perHour": 55000
+      }
+    },
+    {
+      "id": "van-dingin-01",
+      "vehicleProfile": {
+        "type": "refrigerated_van",
+        "avgSpeedKmh": 30
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 400
+      },
+      "skills": [
+        "cold"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 250000,
+        "perKm": 4500,
+        "perHour": 40000
+      }
+    },
+    {
+      "id": "van-dingin-02",
+      "vehicleProfile": {
+        "type": "refrigerated_van",
+        "avgSpeedKmh": 30
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 400
+      },
+      "skills": [
+        "cold"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 250000,
+        "perKm": 4500,
+        "perHour": 40000
+      }
+    },
+    {
+      "id": "van-dingin-03",
+      "vehicleProfile": {
+        "type": "refrigerated_van",
+        "avgSpeedKmh": 30
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 400
+      },
+      "skills": [
+        "cold"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 250000,
+        "perKm": 4500,
+        "perHour": 40000
+      }
+    },
+    {
+      "id": "truk-dingin-01",
+      "vehicleProfile": {
+        "type": "refrigerated_truck",
+        "avgSpeedKmh": 25
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 2500
+      },
+      "skills": [
+        "cold",
+        "tail_lift"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 500000,
+        "perKm": 9500,
+        "perHour": 60000
+      }
+    },
+    {
+      "id": "truk-dingin-02",
+      "vehicleProfile": {
+        "type": "refrigerated_truck",
+        "avgSpeedKmh": 25
+      },
+      "workingTimeWindow": {
+        "begin": "2026-10-19T07:00:00+07:00",
+        "end": "2026-10-19T18:00:00+07:00"
+      },
+      "departure": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "arrival": {
+        "lon": 106.86513,
+        "lat": -6.251417
+      },
+      "capacities": {
+        "weight": 2500
+      },
+      "skills": [
+        "cold",
+        "tail_lift"
+      ],
+      "breaks": [
+        {
+          "type": "fixedBreak",
+          "begin": "2026-10-19T12:00:00+07:00",
+          "end": "2026-10-19T13:00:00+07:00"
+        }
+      ],
+      "cost": {
+        "fixed": 500000,
+        "perKm": 9500,
+        "perHour": 60000
+      }
+    }
+  ],
+  "orders": [
+    {
+      "id": "order-jkt-001",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-001-pasar-santa",
+          "position": {
+            "lon": 106.812077,
+            "lat": -6.240132
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 171
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T12:00:00+07:00",
+              "end": "2026-10-19T12:50:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-002",
+      "requiredSkills": [
+        "cold",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-002-mangga-dua-square",
+          "position": {
+            "lon": 106.831396,
+            "lat": -6.139039
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 1050
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-003",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-003-emporium-pluit-mall",
+          "position": {
+            "lon": 106.791016,
+            "lat": -6.127262
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 170
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-004",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-004-pluit-village",
+          "position": {
+            "lon": 106.789622,
+            "lat": -6.116443
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 37
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-005",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-005-bank-dki-kcp-pasar-muara-karang",
+          "position": {
+            "lon": 106.778533,
+            "lat": -6.115894
+          },
+          "kind": "pickup",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weight": 8
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T07:00:00+07:00",
+              "end": "2026-10-19T10:54:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-006",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-006-ancol-taman-impian",
+          "position": {
+            "lon": 106.833537,
+            "lat": -6.125309
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 9
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T11:20:00+07:00"
+            },
+            {
+              "begin": "2026-10-19T13:30:00+07:00",
+              "end": "2026-10-19T16:20:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-007",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-007-mama-roz-pik-avenue",
+          "position": {
+            "lon": 106.73071,
+            "lat": -6.117664
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 17
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-008",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-008-digimap-lippo-plaza-kramat-jati",
+          "position": {
+            "lon": 106.86882,
+            "lat": -6.270898
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 7
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-009",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-009-rumah-sakit-tebet",
+          "position": {
+            "lon": 106.850142,
+            "lat": -6.242735
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 38
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T07:00:00+07:00",
+              "end": "2026-10-19T14:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-010",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-010-century-wellness-center-mall-cipinang-in",
+          "position": {
+            "lon": 106.893967,
+            "lat": -6.238451
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 34
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T16:48:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-011",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-011-pasar-jatinegara",
+          "position": {
+            "lon": 106.866067,
+            "lat": -6.216195
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 94
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T11:15:00+07:00"
+            },
+            {
+              "begin": "2026-10-19T13:30:00+07:00",
+              "end": "2026-10-19T16:15:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-012",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-012-stasiun-jatinegara",
+          "position": {
+            "lon": 106.870067,
+            "lat": -6.215178
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 189
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:50:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-013",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-013-perbaikan-timbangan-pasar-induk-kramat-j",
+          "position": {
+            "lon": 106.869566,
+            "lat": -6.294509
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 37
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T11:15:00+07:00"
+            },
+            {
+              "begin": "2026-10-19T13:30:00+07:00",
+              "end": "2026-10-19T16:15:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-014",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-014-universitas-trisakti",
+          "position": {
+            "lon": 106.827283,
+            "lat": -6.231075
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 197
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-015",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-015-kuningan-city",
+          "position": {
+            "lon": 106.83003,
+            "lat": -6.225079
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 6
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:50:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-016",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-016-pasar-minggu",
+          "position": {
+            "lon": 106.82921,
+            "lat": -6.286014
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 5
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-017",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-017-2br-at-apartment-bassura-city-next-to-ba",
+          "position": {
+            "lon": 106.894027,
+            "lat": -6.229321
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 179
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-018",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-018-atrium-senen",
+          "position": {
+            "lon": 106.844303,
+            "lat": -6.201507
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 140
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-019",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-019-hypermart-pejaten-village",
+          "position": {
+            "lon": 106.829411,
+            "lat": -6.280412
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 120
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-020",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-020-papilion-s-cafe-at-pacific-place-jakarta",
+          "position": {
+            "lon": 106.810321,
+            "lat": -6.22446
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 21
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:48:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-021",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-021-lawson-rs-persahabatan",
+          "position": {
+            "lon": 106.884683,
+            "lat": -6.203732
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 33
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T07:00:00+07:00",
+              "end": "2026-10-19T14:48:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-022",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-022-bakmi-gm-mal-ambasador",
+          "position": {
+            "lon": 106.826491,
+            "lat": -6.223839
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 30
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T14:00:00+07:00",
+              "end": "2026-10-19T16:48:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-023",
+      "requiredSkills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-023-blok-m-square",
+          "position": {
+            "lon": 106.800761,
+            "lat": -6.244545
+          },
+          "kind": "pickup",
+          "operationDuration": "PT40M",
+          "capacities": {
+            "weight": 557
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T15:20:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-024",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-024-terminal-blok-m",
+          "position": {
+            "lon": 106.800097,
+            "lat": -6.243469
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 101
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:50:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-025",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-025-optik-mighty-eyewear-arion-mall-rawamang",
+          "position": {
+            "lon": 106.890283,
+            "lat": -6.194052
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 31
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-026",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-026-itc-cempaka-mas",
+          "position": {
+            "lon": 106.840066,
+            "lat": -6.177325
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 37
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-027",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-027-pintu-terminal-kampung-rambutan",
+          "position": {
+            "lon": 106.880599,
+            "lat": -6.306654
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 36
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T11:15:00+07:00"
+            },
+            {
+              "begin": "2026-10-19T13:30:00+07:00",
+              "end": "2026-10-19T16:15:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-028",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-028-pondok-kelapa",
+          "position": {
+            "lon": 106.934395,
+            "lat": -6.23972
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 73
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:52:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-029",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-029-terminal-pulo-gadung",
+          "position": {
+            "lon": 106.846466,
+            "lat": -6.18505
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 115
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-030",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-030-stasiun-gambir",
+          "position": {
+            "lon": 106.830606,
+            "lat": -6.176642
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 168
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:50:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-031",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-031-buaran-plaza",
+          "position": {
+            "lon": 106.92409,
+            "lat": -6.217847
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 39
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T11:48:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-032",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-032-tindik-indonesia-grand-indonesia",
+          "position": {
+            "lon": 106.820674,
+            "lat": -6.195877
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 82
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-033",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-033-seberang-pasar-palmerah",
+          "position": {
+            "lon": 106.795854,
+            "lat": -6.207508
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 40
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T16:48:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-034",
+      "requiredSkills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-034-plaza-senayan",
+          "position": {
+            "lon": 106.797762,
+            "lat": -6.227567
+          },
+          "kind": "pickup",
+          "operationDuration": "PT40M",
+          "capacities": {
+            "weight": 340
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T15:20:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-035",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-035-nika-plaza-indonesia",
+          "position": {
+            "lon": 106.822495,
+            "lat": -6.193082
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 18
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-036",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-036-pasar-baru-jakarta",
+          "position": {
+            "lon": 106.834215,
+            "lat": -6.162299
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 58
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T16:48:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-037",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-037-sarinah-mh-thamrin",
+          "position": {
+            "lon": 106.823046,
+            "lat": -6.187846
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 162
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T11:22:00+07:00"
+            },
+            {
+              "begin": "2026-10-19T13:30:00+07:00",
+              "end": "2026-10-19T16:22:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-038",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-038-guardian-mall-cijantung",
+          "position": {
+            "lon": 106.862028,
+            "lat": -6.31281
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 63
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:00:00+07:00",
+              "end": "2026-10-19T10:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-039",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-039-thamrin-city",
+          "position": {
+            "lon": 106.816482,
+            "lat": -6.194351
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 67
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-040",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-040-universitas-pancasila",
+          "position": {
+            "lon": 106.833996,
+            "lat": -6.339179
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 26
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-041",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-041-grab-kemanggisan-binus-syahdan",
+          "position": {
+            "lon": 106.787055,
+            "lat": -6.200712
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 18
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T16:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-042",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-042-pasar-rawamangun",
+          "position": {
+            "lon": 106.871709,
+            "lat": -6.152204
+          },
+          "kind": "pickup",
+          "operationDuration": "PT5M",
+          "capacities": {
+            "weight": 12
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T07:00:00+07:00",
+              "end": "2026-10-19T10:55:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-043",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-043-zenbu-central-park-mall",
+          "position": {
+            "lon": 106.791022,
+            "lat": -6.176365
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 179
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T14:00:00+07:00",
+              "end": "2026-10-19T16:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-044",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-044-ataru-neo-soho-mall",
+          "position": {
+            "lon": 106.788591,
+            "lat": -6.177436
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 29
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-045",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-045-kantong-jus-artha-gading-mall",
+          "position": {
+            "lon": 106.89217,
+            "lat": -6.145634
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 33
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-046",
+      "requiredSkills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-046-teazzi-mall-of-indonesia",
+          "position": {
+            "lon": 106.892902,
+            "lat": -6.1512
+          },
+          "kind": "pickup",
+          "operationDuration": "PT30M",
+          "capacities": {
+            "weight": 421
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T15:30:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-047",
+      "requiredSkills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-047-optik-melawai-mal-ciputra-jakarta",
+          "position": {
+            "lon": 106.786407,
+            "lat": -6.168321
+          },
+          "kind": "pickup",
+          "operationDuration": "PT30M",
+          "capacities": {
+            "weight": 601
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T15:30:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-048",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-048-reddoorz-plus-near-taman-anggrek-mall",
+          "position": {
+            "lon": 106.786847,
+            "lat": -6.173053
+          },
+          "kind": "pickup",
+          "operationDuration": "PT20M",
+          "capacities": {
+            "weight": 39
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-049",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-049-udn-sunter",
+          "position": {
+            "lon": 106.879393,
+            "lat": -6.143867
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 126
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T16:50:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-050",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-050-ciracas",
+          "position": {
+            "lon": 106.87655,
+            "lat": -6.326484
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 130
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T11:20:00+07:00"
+            },
+            {
+              "begin": "2026-10-19T13:30:00+07:00",
+              "end": "2026-10-19T16:20:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-051",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-051-century-mal-kelapa-gading",
+          "position": {
+            "lon": 106.907856,
+            "lat": -6.158029
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 13
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T16:50:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-052",
+      "requiredSkills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-052-atm-bank-danamon-kalibata-city-square",
+          "position": {
+            "lon": 106.79543,
+            "lat": -6.162732
+          },
+          "kind": "pickup",
+          "operationDuration": "PT25M",
+          "capacities": {
+            "weight": 362
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T15:35:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-053",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-053-reddoorz-plus-season-city-mall",
+          "position": {
+            "lon": 106.790183,
+            "lat": -6.160735
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 5
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T14:00:00+07:00",
+              "end": "2026-10-19T16:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-054",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-054-endorphins-gandaria-city",
+          "position": {
+            "lon": 106.783536,
+            "lat": -6.24393
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 57
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:00:00+07:00",
+              "end": "2026-10-19T10:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-055",
+      "requiredSkills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-055-gajah-mada-plaza",
+          "position": {
+            "lon": 106.818566,
+            "lat": -6.160764
+          },
+          "kind": "pickup",
+          "operationDuration": "PT30M",
+          "capacities": {
+            "weight": 790
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T15:30:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-056",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-056-saigon-delight-pondok-indah-mall",
+          "position": {
+            "lon": 106.784072,
+            "lat": -6.26731
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 19
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T14:00:00+07:00",
+              "end": "2026-10-19T16:50:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-057",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-057-tanjung-priok",
+          "position": {
+            "lon": 106.87209,
+            "lat": -6.134046
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 70
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:52:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-058",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-058-solaria-stasiun-jakarta-kota",
+          "position": {
+            "lon": 106.814657,
+            "lat": -6.138016
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 106
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-059",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-059-rs-pondok-indah-puri-indah",
+          "position": {
+            "lon": 106.735515,
+            "lat": -6.186637
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 17
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T07:00:00+07:00",
+              "end": "2026-10-19T14:48:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-060",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-060-poins-square",
+          "position": {
+            "lon": 106.778528,
+            "lat": -6.289489
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 159
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-061",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-061-unit-gawat-darurat-rumah-sakit-atma-jaya",
+          "position": {
+            "lon": 106.793386,
+            "lat": -6.126706
+          },
+          "kind": "pickup",
+          "operationDuration": "PT20M",
+          "capacities": {
+            "weight": 24
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T07:00:00+07:00",
+              "end": "2026-10-19T14:40:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-062",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-062-cakung",
+          "position": {
+            "lon": 106.94238,
+            "lat": -6.188136
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 94
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-063",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-063-mandiri-atm-rs-fatmawati",
+          "position": {
+            "lon": 106.794515,
+            "lat": -6.302699
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 18
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T07:00:00+07:00",
+              "end": "2026-10-19T14:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-064",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-064-daan-mogot-mall",
+          "position": {
+            "lon": 106.714281,
+            "lat": -6.152042
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 9
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-065",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-065-pasar-malam-jb-cengkareng",
+          "position": {
+            "lon": 106.735713,
+            "lat": -6.14209
+          },
+          "kind": "pickup",
+          "operationDuration": "PT5M",
+          "capacities": {
+            "weight": 12
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T07:00:00+07:00",
+              "end": "2026-10-19T10:55:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-jkt-066",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-jkt-066-pintu-belakang-terminal-kalideres",
+          "position": {
+            "lon": 106.706042,
+            "lat": -6.153319
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 54
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T16:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-001",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-001-larangan",
+          "position": {
+            "lon": 106.730545,
+            "lat": -6.225953
+          },
+          "kind": "pickup",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weight": 5
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T11:54:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-002",
+      "requiredSkills": [
+        "cold",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-002-pasar-kreo-ciledug",
+          "position": {
+            "lon": 106.738917,
+            "lat": -6.234937
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 1029
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-003",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-003-pasar-lingkungan-poris-cipondoh",
+          "position": {
+            "lon": 106.685846,
+            "lat": -6.184092
+          },
+          "kind": "pickup",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weight": 12
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T07:00:00+07:00",
+              "end": "2026-10-19T10:54:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-004",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-004-kelapa-sutra-pasar-poris",
+          "position": {
+            "lon": 106.688098,
+            "lat": -6.176548
+          },
+          "kind": "pickup",
+          "operationDuration": "PT20M",
+          "capacities": {
+            "weight": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-005",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-005-king-rabbit-mal-alam-sutera",
+          "position": {
+            "lon": 106.653626,
+            "lat": -6.222544
+          },
+          "kind": "pickup",
+          "operationDuration": "PT20M",
+          "capacities": {
+            "weight": 31
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-006",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-006-stasiun-poris",
+          "position": {
+            "lon": 106.681028,
+            "lat": -6.16976
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 11
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-007",
+      "requiredSkills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-007-alam-sutera-town-center",
+          "position": {
+            "lon": 106.654098,
+            "lat": -6.242472
+          },
+          "kind": "pickup",
+          "operationDuration": "PT25M",
+          "capacities": {
+            "weight": 724
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:30:00+07:00",
+              "end": "2026-10-19T15:05:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-008",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-008-potteria-bintaro-jaya-xchange-mall",
+          "position": {
+            "lon": 106.728287,
+            "lat": -6.28494
+          },
+          "kind": "pickup",
+          "operationDuration": "PT20M",
+          "capacities": {
+            "weight": 23
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:30:00+07:00",
+              "end": "2026-10-19T14:40:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-009",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-009-terminal-poris-plawad",
+          "position": {
+            "lon": 106.664638,
+            "lat": -6.17307
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 98
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:50:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-010",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-010-metropolis-town-square",
+          "position": {
+            "lon": 106.637056,
+            "lat": -6.197216
+          },
+          "kind": "pickup",
+          "operationDuration": "PT20M",
+          "capacities": {
+            "weight": 30
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:10:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-011",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-011-alun-alun-pinang-kota-tangerang",
+          "position": {
+            "lon": 106.671506,
+            "lat": -6.230689
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 186
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-012",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-012-bundaran-alam-sutera",
+          "position": {
+            "lon": 106.649049,
+            "lat": -6.243936
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 117
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-013",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-013-aragon-transport-wtc-serpong",
+          "position": {
+            "lon": 106.654841,
+            "lat": -6.266277
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 156
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-014",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-014-kelapa-dua",
+          "position": {
+            "lon": 106.617386,
+            "lat": -6.235248
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 9
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:48:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-015",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-015-summarecon-mall-serpong",
+          "position": {
+            "lon": 106.628359,
+            "lat": -6.241105
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 21
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-016",
+      "requiredSkills": [
+        "hazmat"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-016-batu-ceper",
+          "position": {
+            "lon": 106.665053,
+            "lat": -6.171861
+          },
+          "kind": "pickup",
+          "operationDuration": "PT45M",
+          "capacities": {
+            "weight": 249
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-017",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-017-chateraise-supermal-karawaci",
+          "position": {
+            "lon": 106.607521,
+            "lat": -6.227014
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 116
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:20:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-018",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-018-ayam-kegeprek-ciputat-timur",
+          "position": {
+            "lon": 106.708313,
+            "lat": -6.295502
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 12
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-019",
+      "requiredSkills": [
+        "hazmat"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-019-imperial-tables-rs-siloam-karawaci",
+          "position": {
+            "lon": 106.597897,
+            "lat": -6.225371
+          },
+          "kind": "pickup",
+          "operationDuration": "PT45M",
+          "capacities": {
+            "weight": 287
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-020",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-020-alfamart-stasiun-sudimara",
+          "position": {
+            "lon": 106.71336,
+            "lat": -6.297761
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 74
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:20:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-021",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-021-ella-skincare-tangerang-city-mall",
+          "position": {
+            "lon": 106.635879,
+            "lat": -6.193459
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 22
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-022",
+      "requiredSkills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-022-scientia-square-park",
+          "position": {
+            "lon": 106.616803,
+            "lat": -6.257622
+          },
+          "kind": "pickup",
+          "operationDuration": "PT30M",
+          "capacities": {
+            "weight": 785
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:30:00+07:00",
+              "end": "2026-10-19T15:00:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-023",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-023-universitas-pamulang",
+          "position": {
+            "lon": 106.736669,
+            "lat": -6.343853
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 185
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-024",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-024-gerai-disdukcapil-pamulang-square",
+          "position": {
+            "lon": 106.72519,
+            "lat": -6.342724
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 39
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:15:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-025",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-025-klinik-kimia-farma-pasar-anyar-tangerang",
+          "position": {
+            "lon": 106.63497,
+            "lat": -6.173383
+          },
+          "kind": "pickup",
+          "operationDuration": "PT20M",
+          "capacities": {
+            "weight": 12
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-026",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-026-senzibun-pasar-modern-bsd",
+          "position": {
+            "lon": 106.684494,
+            "lat": -6.304421
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 17
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:48:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-027",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-027-pasar-cikupa-tangerang",
+          "position": {
+            "lon": 106.519656,
+            "lat": -6.229427
+          },
+          "kind": "pickup",
+          "operationDuration": "PT20M",
+          "capacities": {
+            "weight": 30
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:40:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-028",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-028-stasiun-jurang-mangu",
+          "position": {
+            "lon": 106.729529,
+            "lat": -6.288753
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 12
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:20:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-029",
+      "requiredSkills": [
+        "hazmat"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-029-ohlala-eka-hospital-bsd",
+          "position": {
+            "lon": 106.669527,
+            "lat": -6.298781
+          },
+          "kind": "pickup",
+          "operationDuration": "PT45M",
+          "capacities": {
+            "weight": 192
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-030",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-030-circle-k-teras-kota-bsd",
+          "position": {
+            "lon": 106.668226,
+            "lat": -6.295847
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 95
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-031",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-031-itc-bsd",
+          "position": {
+            "lon": 106.668145,
+            "lat": -6.281332
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 166
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-032",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-032-stasiun-serpong",
+          "position": {
+            "lon": 106.663576,
+            "lat": -6.320131
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 144
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-033",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-033-pegadaian-upc-pasar-serpong",
+          "position": {
+            "lon": 106.663222,
+            "lat": -6.322239
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 65
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:50:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-034",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-034-the-breeze-bsd-city",
+          "position": {
+            "lon": 106.653275,
+            "lat": -6.301323
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 89
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:30:00+07:00",
+              "end": "2026-10-19T14:52:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-035",
+      "requiredSkills": [
+        "hazmat"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-035-periuk",
+          "position": {
+            "lon": 106.59446,
+            "lat": -6.158084
+          },
+          "kind": "pickup",
+          "operationDuration": "PT45M",
+          "capacities": {
+            "weight": 262
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-036",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-036-cisauk",
+          "position": {
+            "lon": 106.62512,
+            "lat": -6.328553
+          },
+          "kind": "pickup",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weight": 10
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:30:00+07:00",
+              "end": "2026-10-19T14:54:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-037",
+      "requiredSkills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-037-aeon-mall-bsd-city-xxi",
+          "position": {
+            "lon": 106.644471,
+            "lat": -6.303801
+          },
+          "kind": "pickup",
+          "operationDuration": "PT40M",
+          "capacities": {
+            "weight": 327
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:30:00+07:00",
+              "end": "2026-10-19T14:50:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-038",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-038-tigaraksa",
+          "position": {
+            "lon": 106.46677,
+            "lat": -6.259346
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 179
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-tng-039",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-039-nongkitiam-gading-serpong",
+          "position": {
+            "lon": 106.617577,
+            "lat": -6.268794
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 22
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:52:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-tng-040",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-tng-040-panongan",
+          "position": {
+            "lon": 106.52733,
+            "lat": -6.282992
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 8
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:22:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-001",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-001-pondokgede",
+          "position": {
+            "lon": 106.920044,
+            "lat": -6.257277
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 20
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T11:22:00+07:00"
+            },
+            {
+              "begin": "2026-10-19T13:30:00+07:00",
+              "end": "2026-10-19T16:22:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-002",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-002-jatibening-baru",
+          "position": {
+            "lon": 106.93437,
+            "lat": -6.26167
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 6
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-003",
+      "requiredSkills": [
+        "cold",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-003-informa-grand-metropolitan-mall",
+          "position": {
+            "lon": 106.984887,
+            "lat": -6.249481
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 626
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-004",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-004-erha-ultimate-grand-galaxy-park",
+          "position": {
+            "lon": 106.971699,
+            "lat": -6.270205
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 22
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:48:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-005",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-005-mega-bekasi-hypermall",
+          "position": {
+            "lon": 106.992982,
+            "lat": -6.249522
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 22
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-006",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-006-bekasi-cyber-park-mall",
+          "position": {
+            "lon": 106.991464,
+            "lat": -6.246822
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 79
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-007",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-007-cgv-lagoon-avenue-bekasi",
+          "position": {
+            "lon": 106.978849,
+            "lat": -6.251755
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 116
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-008",
+      "requiredSkills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-008-roji-ramen-revo-town-bekasi",
+          "position": {
+            "lon": 106.989909,
+            "lat": -6.254676
+          },
+          "kind": "pickup",
+          "operationDuration": "PT25M",
+          "capacities": {
+            "weight": 531
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T15:35:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-009",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-009-stasiun-bekasi",
+          "position": {
+            "lon": 106.999632,
+            "lat": -6.237451
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 85
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T14:00:00+07:00",
+              "end": "2026-10-19T16:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-010",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-010-rsud-kota-bekasi-2",
+          "position": {
+            "lon": 107.002212,
+            "lat": -6.242463
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 39
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T07:00:00+07:00",
+              "end": "2026-10-19T14:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-011",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-011-bakso-luwes-pasar-proyek-bekasi",
+          "position": {
+            "lon": 107.003384,
+            "lat": -6.241745
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 33
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:00:00+07:00",
+              "end": "2026-10-19T10:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-012",
+      "requiredSkills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-012-bekasi-town-square",
+          "position": {
+            "lon": 107.009982,
+            "lat": -6.253747
+          },
+          "kind": "pickup",
+          "operationDuration": "PT25M",
+          "capacities": {
+            "weight": 722
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T15:35:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-013",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-013-bekasi-timur",
+          "position": {
+            "lon": 107.00658,
+            "lat": -6.24717
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-014",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-014-terminal-bekasi",
+          "position": {
+            "lon": 107.013989,
+            "lat": -6.249391
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 164
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:52:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-015",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-015-jatisampurna",
+          "position": {
+            "lon": 106.923256,
+            "lat": -6.35938
+          },
+          "kind": "pickup",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weight": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-016",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-016-pasar-segar-bekasi-barat",
+          "position": {
+            "lon": 106.99227,
+            "lat": -6.273695
+          },
+          "kind": "pickup",
+          "operationDuration": "PT20M",
+          "capacities": {
+            "weight": 29
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:00:00+07:00",
+              "end": "2026-10-19T10:40:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-017",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-017-momoyo-pekayon-bekasi",
+          "position": {
+            "lon": 106.977181,
+            "lat": -6.274575
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 197
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-018",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-018-harapan-jaya",
+          "position": {
+            "lon": 106.988785,
+            "lat": -6.205356
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 79
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:52:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-019",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-019-bekasi-utara",
+          "position": {
+            "lon": 106.98894,
+            "lat": -6.210841
+          },
+          "kind": "pickup",
+          "operationDuration": "PT5M",
+          "capacities": {
+            "weight": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-020",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-020-rs-mitra-keluarga-bekasi-timur",
+          "position": {
+            "lon": 107.012886,
+            "lat": -6.260332
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 29
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T07:00:00+07:00",
+              "end": "2026-10-19T14:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-021",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-021-tambun-selatan",
+          "position": {
+            "lon": 107.03733,
+            "lat": -6.227739
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 62
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-022",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-022-cibarusah",
+          "position": {
+            "lon": 107.019883,
+            "lat": -6.300267
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 6
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-023",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-023-era-makmur-cabang-boulevard-hijau",
+          "position": {
+            "lon": 106.985387,
+            "lat": -6.186898
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 120
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:48:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-024",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-024-stasiun-tambun-bekasi",
+          "position": {
+            "lon": 107.055603,
+            "lat": -6.258235
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 58
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T14:00:00+07:00",
+              "end": "2026-10-19T16:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-025",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-025-sct-mustika-jaya-bekasi",
+          "position": {
+            "lon": 107.029107,
+            "lat": -6.305432
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 11
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-026",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-026-stasiun-cibitung",
+          "position": {
+            "lon": 107.083773,
+            "lat": -6.261123
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 96
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:52:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-027",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-027-pasar-babelan",
+          "position": {
+            "lon": 107.045538,
+            "lat": -6.166152
+          },
+          "kind": "pickup",
+          "operationDuration": "PT20M",
+          "capacities": {
+            "weight": 16
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-028",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-028-cibitung",
+          "position": {
+            "lon": 107.09196,
+            "lat": -6.237325
+          },
+          "kind": "pickup",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weight": 8
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:54:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-029",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-029-setu",
+          "position": {
+            "lon": 106.9937,
+            "lat": -6.362088
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 12
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-030",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-030-cikarang-barat",
+          "position": {
+            "lon": 107.10426,
+            "lat": -6.281403
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-031",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-031-stasiun-cikarang",
+          "position": {
+            "lon": 107.143951,
+            "lat": -6.255989
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 175
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-032",
+      "requiredSkills": [
+        "hazmat"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-032-berkah-florist-jababeka-cikarang",
+          "position": {
+            "lon": 107.149257,
+            "lat": -6.293209
+          },
+          "kind": "pickup",
+          "operationDuration": "PT45M",
+          "capacities": {
+            "weight": 257
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-033",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-033-pasar-bersih-cikarang",
+          "position": {
+            "lon": 107.159887,
+            "lat": -6.317482
+          },
+          "kind": "pickup",
+          "operationDuration": "PT20M",
+          "capacities": {
+            "weight": 6
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:10:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bks-034",
+      "requiredSkills": [
+        "hazmat"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-034-h-i-s-travel-ejip-cikarang",
+          "position": {
+            "lon": 107.122294,
+            "lat": -6.328075
+          },
+          "kind": "pickup",
+          "operationDuration": "PT45M",
+          "capacities": {
+            "weight": 206
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-035",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-035-cikarang-selatan",
+          "position": {
+            "lon": 107.1566,
+            "lat": -6.304541
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 169
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-036",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-036-lemahabang",
+          "position": {
+            "lon": 107.170411,
+            "lat": -6.276636
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 22
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-037",
+      "requiredSkills": [
+        "hazmat"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-037-pt-alsok-bass-cabang-delta-mas-cikarang",
+          "position": {
+            "lon": 107.190598,
+            "lat": -6.352074
+          },
+          "kind": "pickup",
+          "operationDuration": "PT45M",
+          "capacities": {
+            "weight": 89
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bks-038",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bks-038-karangbahagia",
+          "position": {
+            "lon": 107.198425,
+            "lat": -6.195915
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-001",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-001-campus",
+          "position": {
+            "lon": 106.841503,
+            "lat": -6.354315
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 82
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:00:00+07:00",
+              "end": "2026-10-19T10:48:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-002",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-002-erafone-kelapa-dua-depok",
+          "position": {
+            "lon": 106.841804,
+            "lat": -6.355123
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 161
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:52:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-003",
+      "requiredSkills": [
+        "cold",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-003-ramenya-depok-town-square",
+          "position": {
+            "lon": 106.832486,
+            "lat": -6.372574
+          },
+          "kind": "pickup",
+          "operationDuration": "PT20M",
+          "capacities": {
+            "weight": 683
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T11:10:00+07:00"
+            },
+            {
+              "begin": "2026-10-19T13:30:00+07:00",
+              "end": "2026-10-19T16:10:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-004",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-004-smm-cibubur-depok-3",
+          "position": {
+            "lon": 106.898956,
+            "lat": -6.377164
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 148
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:00:00+07:00",
+              "end": "2026-10-19T10:52:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-005",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-005-cimanggis-square",
+          "position": {
+            "lon": 106.859714,
+            "lat": -6.356998
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 8
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T16:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-006",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-006-jalan-haji-boih-kelurahan-tugu-kecamatan",
+          "position": {
+            "lon": 106.859237,
+            "lat": -6.355223
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 11
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-007",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-007-pasar-sukatani-toko-sepatu",
+          "position": {
+            "lon": 106.889445,
+            "lat": -6.387109
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-008",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-008-curug",
+          "position": {
+            "lon": 106.87194,
+            "lat": -6.3861
+          },
+          "kind": "pickup",
+          "operationDuration": "PT5M",
+          "capacities": {
+            "weight": 7
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-009",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-009-komplek-pangkalan-jati-village-blok-c",
+          "position": {
+            "lon": 106.800883,
+            "lat": -6.332078
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 150
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T11:18:00+07:00"
+            },
+            {
+              "begin": "2026-10-19T13:30:00+07:00",
+              "end": "2026-10-19T16:18:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-010",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-010-mekarsari",
+          "position": {
+            "lon": 106.86679,
+            "lat": -6.364161
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 156
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-011",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-011-pesona-square",
+          "position": {
+            "lon": 106.843981,
+            "lat": -6.380772
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 6
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-012",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-012-tapos",
+          "position": {
+            "lon": 106.88815,
+            "lat": -6.399059
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 187
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-013",
+      "requiredSkills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-013-mandiri-atm-mall-cinere",
+          "position": {
+            "lon": 106.784805,
+            "lat": -6.335087
+          },
+          "kind": "pickup",
+          "operationDuration": "PT30M",
+          "capacities": {
+            "weight": 826
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T15:30:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-014",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-014-pasar-segar-cinere",
+          "position": {
+            "lon": 106.783894,
+            "lat": -6.333384
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-015",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-015-kemiri-muka",
+          "position": {
+            "lon": 106.83106,
+            "lat": -6.379305
+          },
+          "kind": "pickup",
+          "operationDuration": "PT20M",
+          "capacities": {
+            "weight": 15
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T16:40:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-016",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-016-sukmajaya",
+          "position": {
+            "lon": 106.84738,
+            "lat": -6.404972
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 145
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-017",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-017-balai-kota-depok",
+          "position": {
+            "lon": 106.82278,
+            "lat": -6.394977
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 150
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T11:20:00+07:00"
+            },
+            {
+              "begin": "2026-10-19T13:30:00+07:00",
+              "end": "2026-10-19T16:20:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-018",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-018-terminal-depok",
+          "position": {
+            "lon": 106.824654,
+            "lat": -6.391616
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-019",
+      "requiredSkills": [
+        "hazmat"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-019-atm-rs-hermina-depok",
+          "position": {
+            "lon": 106.825257,
+            "lat": -6.399299
+          },
+          "kind": "pickup",
+          "operationDuration": "PT45M",
+          "capacities": {
+            "weight": 203
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-020",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-020-beji",
+          "position": {
+            "lon": 106.814156,
+            "lat": -6.382148
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 135
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T08:00:00+07:00",
+              "end": "2026-10-19T11:22:00+07:00"
+            },
+            {
+              "begin": "2026-10-19T13:30:00+07:00",
+              "end": "2026-10-19T16:22:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-021",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-021-satu-kenangan-ft-universitas-indonesia-d",
+          "position": {
+            "lon": 106.821081,
+            "lat": -6.365087
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 14
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:00:00+07:00",
+              "end": "2026-10-19T10:50:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-022",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-022-grand-depok-city",
+          "position": {
+            "lon": 106.8284,
+            "lat": -6.419846
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 101
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-023",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-023-pintu-masuk-pasar-depok-jaya",
+          "position": {
+            "lon": 106.814517,
+            "lat": -6.392766
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 39
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-024",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-024-stasiun-depok-lama",
+          "position": {
+            "lon": 106.817796,
+            "lat": -6.405358
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 27
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-025",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-025-pancoran-mas",
+          "position": {
+            "lon": 106.80555,
+            "lat": -6.404735
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 7
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-026",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-026-bagi-kopi-margonda-raya",
+          "position": {
+            "lon": 106.819622,
+            "lat": -6.398545
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 29
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-027",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-027-limo",
+          "position": {
+            "lon": 106.77979,
+            "lat": -6.360279
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 12
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:30:00+07:00",
+              "end": "2026-10-19T14:52:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-028",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-028-meruyung",
+          "position": {
+            "lon": 106.77014,
+            "lat": -6.377953
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 93
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:15:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-029",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-029-pasar-rakyat-sawangan",
+          "position": {
+            "lon": 106.771952,
+            "lat": -6.403056
+          },
+          "kind": "pickup",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weight": 7
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:30:00+07:00",
+              "end": "2026-10-19T11:54:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-030",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-030-sawangan-depok",
+          "position": {
+            "lon": 106.768563,
+            "lat": -6.407261
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 10
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:20:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-031",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-031-duren-seribu",
+          "position": {
+            "lon": 106.7434,
+            "lat": -6.429081
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 179
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-dpk-032",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-dpk-032-bojongsari",
+          "position": {
+            "lon": 106.72977,
+            "lat": -6.36282
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 193
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:30:00+07:00",
+              "end": "2026-10-19T14:52:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-001",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-001-gunung-putri",
+          "position": {
+            "lon": 106.89191,
+            "lat": -6.463951
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 124
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-002",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-002-pasar-citeureup-2",
+          "position": {
+            "lon": 106.88307,
+            "lat": -6.488208
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 28
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:50:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-003",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-003-cileungsi",
+          "position": {
+            "lon": 106.96806,
+            "lat": -6.40357
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 118
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-004",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-004-kang-dayat-pasar-cibinong",
+          "position": {
+            "lon": 106.855395,
+            "lat": -6.466706
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 85
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-005",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-005-sensatia-cibinong-city-mall",
+          "position": {
+            "lon": 106.841882,
+            "lat": -6.484357
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 6
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-006",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-006-bellanova-country-mall",
+          "position": {
+            "lon": 106.844293,
+            "lat": -6.56659
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 94
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-007",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-007-aeon-mall-sentul-city",
+          "position": {
+            "lon": 106.859292,
+            "lat": -6.566976
+          },
+          "kind": "pickup",
+          "operationDuration": "PT20M",
+          "capacities": {
+            "weight": 21
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-008",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-008-samsat-keliling-stadion-pakansari",
+          "position": {
+            "lon": 106.834926,
+            "lat": -6.492954
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 103
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-009",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-009-lapis-bogor-sangkuriang-pomad",
+          "position": {
+            "lon": 106.82327,
+            "lat": -6.547567
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 133
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-010",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-010-stasiun-bojonggede",
+          "position": {
+            "lon": 106.795185,
+            "lat": -6.49473
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 6
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-011",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-011-cimahpar",
+          "position": {
+            "lon": 106.827644,
+            "lat": -6.589626
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 120
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-012",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-012-carina-store-ponsel",
+          "position": {
+            "lon": 106.801651,
+            "lat": -6.572823
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 133
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-013",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-013-sentul-nirwana",
+          "position": {
+            "lon": 106.89208,
+            "lat": -6.581583
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 38
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-014",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-014-kebun-raya-bogor",
+          "position": {
+            "lon": 106.801619,
+            "lat": -6.601907
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 106
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:52:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-015",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-015-terminal-baranangsiang",
+          "position": {
+            "lon": 106.806777,
+            "lat": -6.605847
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 186
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-016",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-016-vespa-sinergi-bogor",
+          "position": {
+            "lon": 106.81399,
+            "lat": -6.613868
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 147
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-017",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-017-bogor-service-cimanggu",
+          "position": {
+            "lon": 106.790067,
+            "lat": -6.572445
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 25
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:52:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-018",
+      "requiredSkills": [
+        "cold"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-018-cimol-bohay-pasar-anyar-bogor",
+          "position": {
+            "lon": 106.792504,
+            "lat": -6.591997
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 13
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:45:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-019",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-019-workshop-mesin-universitas-ibn-khaldun",
+          "position": {
+            "lon": 106.793883,
+            "lat": -6.56034
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 27
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-020",
+      "requiredSkills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-020-atm-bni-bogor-trade-mall",
+          "position": {
+            "lon": 106.796018,
+            "lat": -6.604984
+          },
+          "kind": "pickup",
+          "operationDuration": "PT40M",
+          "capacities": {
+            "weight": 339
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:30:00+07:00",
+              "end": "2026-10-19T14:50:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-021",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-021-sukasari",
+          "position": {
+            "lon": 106.814545,
+            "lat": -6.62003
+          },
+          "kind": "pickup",
+          "operationDuration": "PT5M",
+          "capacities": {
+            "weight": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-022",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-022-stasiun-bogor",
+          "position": {
+            "lon": 106.78985,
+            "lat": -6.595562
+          },
+          "kind": "pickup",
+          "operationDuration": "PT15M",
+          "capacities": {
+            "weight": 24
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T10:00:00+07:00",
+              "end": "2026-10-19T14:15:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-023",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-023-taman-yasmin-bogor",
+          "position": {
+            "lon": 106.775749,
+            "lat": -6.565217
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 22
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:30:00+07:00",
+              "end": "2026-10-19T14:52:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-024",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-024-tajur",
+          "position": {
+            "lon": 106.822685,
+            "lat": -6.62738
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 12
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:30:00+07:00",
+              "end": "2026-10-19T14:52:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-025",
+      "requiredSkills": [
+        "ambient",
+        "tail_lift"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-025-kopi-halaman-boxies-mall-123",
+          "position": {
+            "lon": 106.827185,
+            "lat": -6.634315
+          },
+          "kind": "pickup",
+          "operationDuration": "PT40M",
+          "capacities": {
+            "weight": 776
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:30:00+07:00",
+              "end": "2026-10-19T14:50:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-026",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-026-terminal-bubulak",
+          "position": {
+            "lon": 106.755347,
+            "lat": -6.570926
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 89
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-027",
+      "requiredSkills": [
+        "hazmat"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-027-seberang-rsud-kota-bogor",
+          "position": {
+            "lon": 106.777509,
+            "lat": -6.581401
+          },
+          "kind": "pickup",
+          "operationDuration": "PT45M",
+          "capacities": {
+            "weight": 142
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-028",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-028-pasar-ciomas",
+          "position": {
+            "lon": 106.768044,
+            "lat": -6.602689
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 13
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:30:00+07:00",
+              "end": "2026-10-19T14:48:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-029",
+      "requiredSkills": [
+        "ambient",
+        "narrow_access"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-029-pasar-kertasari-bogor",
+          "position": {
+            "lon": 106.84038,
+            "lat": -6.678982
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 8
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T09:30:00+07:00",
+              "end": "2026-10-19T11:52:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-030",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-030-rumpin",
+          "position": {
+            "lon": 106.65276,
+            "lat": -6.445929
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 5
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T13:00:00+07:00",
+              "end": "2026-10-19T14:50:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-031",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-031-cariu",
+          "position": {
+            "lon": 106.901958,
+            "lat": -6.678388
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 25
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T17:00:00+07:00",
+              "end": "2026-10-19T17:35:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-032",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-032-cijeruk",
+          "position": {
+            "lon": 106.77859,
+            "lat": -6.714892
+          },
+          "kind": "pickup",
+          "operationDuration": "PT12M",
+          "capacities": {
+            "weight": 49
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-033",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-033-taman-safari-indonesia",
+          "position": {
+            "lon": 106.950247,
+            "lat": -6.718091
+          },
+          "kind": "pickup",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "weight": 14
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-bgr-034",
+      "requiredSkills": [
+        "ambient"
+      ],
+      "stops": [
+        {
+          "type": "single",
+          "id": "pickup-bgr-034-seberang-pasar-leuwiliang",
+          "position": {
+            "lon": 106.632197,
+            "lat": -6.57429
+          },
+          "kind": "pickup",
+          "operationDuration": "PT10M",
+          "capacities": {
+            "weight": 162
+          },
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-10-19T07:00:00+07:00",
+              "end": "2026-10-19T07:50:00+07:00"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectives": [
+    "maximizeMandatoryStops",
+    "maximizePreferredStops",
+    "minimizeDelay",
+    "minimizeCosts",
+    "minimizeDistance"
+  ],
+  "properties": {
+    "name": "Penjemputan Jabodetabek: armada campuran, jam kerja 07:00-18:00, istirahat 12:00-13:00",
+    "description": "Penjemputan (pickup) barang di 210 lokasi di Jakarta, Bogor, Depok, Tangerang dan Bekasi dari satu gudang di Cawang. Armada: motor, mobil, truk CDD/Fuso, van dan truk berpendingin. Keterampilan: ambient, cold, narrow_access (gang/pasar, hanya motor), tail_lift (palet berat, hanya truk), hazmat (limbah B3, hanya satu truk khusus). Kendaraan berpendingin hanya boleh mengambil order cold; kendaraan biasa tidak boleh mengambil order cold. Jam kerja 07:00-18:00 WIB dengan istirahat tetap 12:00-13:00. Motor boleh banyak trip: kembali ke gudang 10 menit untuk membongkar muatan lalu berangkat lagi. Jendela waktu adalah jam buka lokasi: pelayanan harus mulai dan selesai di dalamnya.",
+    "currency": "IDR"
+  }
+}

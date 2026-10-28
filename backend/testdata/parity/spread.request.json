@@ -1,0 +1,194 @@
+{
+  "planId": "PL-2041",
+  "shipments": [
+    {
+      "id": "s1",
+      "pickup": {
+        "name": "Kemang Village",
+        "address": "Kemang Village, Jakarta",
+        "position": {
+          "lat": -6.2608,
+          "lng": 106.8133
+        },
+        "contactName": "Kontak",
+        "contactPhone": "0812"
+      },
+      "dropoff": {
+        "name": "Senayan City",
+        "address": "Senayan City, Jakarta",
+        "position": {
+          "lat": -6.2275,
+          "lng": 106.8029
+        },
+        "contactName": "Kontak",
+        "contactPhone": "0812"
+      },
+      "items": [
+        {
+          "id": "s1-i",
+          "name": "Paket",
+          "qty": 1,
+          "weightKg": 3,
+          "lengthCm": 30,
+          "widthCm": 20,
+          "heightCm": 10,
+          "fragile": false,
+          "source": "manual"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "pickup": {
+        "name": "Blok M Square",
+        "address": "Blok M Square, Jakarta",
+        "position": {
+          "lat": -6.2441,
+          "lng": 106.7993
+        },
+        "contactName": "Kontak",
+        "contactPhone": "0812"
+      },
+      "dropoff": {
+        "name": "Pondok Indah Mall",
+        "address": "Pondok Indah Mall, Jakarta",
+        "position": {
+          "lat": -6.2653,
+          "lng": 106.7836
+        },
+        "contactName": "Kontak",
+        "contactPhone": "0812"
+      },
+      "items": [
+        {
+          "id": "s2-i",
+          "name": "Paket",
+          "qty": 1,
+          "weightKg": 4,
+          "lengthCm": 30,
+          "widthCm": 20,
+          "heightCm": 10,
+          "fragile": false,
+          "source": "manual"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "pickup": {
+        "name": "Senopati",
+        "address": "Senopati, Jakarta",
+        "position": {
+          "lat": -6.2297,
+          "lng": 106.8137
+        },
+        "contactName": "Kontak",
+        "contactPhone": "0812"
+      },
+      "dropoff": {
+        "name": "Monas",
+        "address": "Monas, Jakarta",
+        "position": {
+          "lat": -6.2088,
+          "lng": 106.8456
+        },
+        "contactName": "Kontak",
+        "contactPhone": "0812"
+      },
+      "items": [
+        {
+          "id": "s3-i",
+          "name": "Paket",
+          "qty": 1,
+          "weightKg": 2,
+          "lengthCm": 30,
+          "widthCm": 20,
+          "heightCm": 10,
+          "fragile": false,
+          "source": "manual"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "pickup": {
+        "name": "Senayan City",
+        "address": "Senayan City, Jakarta",
+        "position": {
+          "lat": -6.2275,
+          "lng": 106.8029
+        },
+        "contactName": "Kontak",
+        "contactPhone": "0812"
+      },
+      "dropoff": {
+        "name": "Pondok Indah Mall",
+        "address": "Pondok Indah Mall, Jakarta",
+        "position": {
+          "lat": -6.2653,
+          "lng": 106.7836
+        },
+        "contactName": "Kontak",
+        "contactPhone": "0812"
+      },
+      "items": [
+        {
+          "id": "s4-i",
+          "name": "Paket",
+          "qty": 1,
+          "weightKg": 5,
+          "lengthCm": 30,
+          "widthCm": 20,
+          "heightCm": 10,
+          "fragile": false,
+          "source": "manual"
+        }
+      ]
+    }
+  ],
+  "schedule": {
+    "mode": "sekarang"
+  },
+  "priority": {
+    "preset": "seimbang"
+  },
+  "vehicles": [
+    {
+      "id": "v-motor",
+      "type": "motor",
+      "plate": "",
+      "model": "",
+      "maxWeightKg": 20,
+      "maxVolumeM3": 0.12,
+      "maxDimensionCm": 55,
+      "fare": {
+        "base": 6000,
+        "perKm": 1800,
+        "perMin": 150,
+        "perExtraStop": 2500,
+        "surchargePerKg": 800,
+        "surchargeAboveKg": 10
+      },
+      "status": "aktif"
+    },
+    {
+      "id": "v-van",
+      "type": "blindvan",
+      "plate": "",
+      "model": "",
+      "maxWeightKg": 500,
+      "maxVolumeM3": 3.2,
+      "maxDimensionCm": 190,
+      "fare": {
+        "base": 45000,
+        "perKm": 4500,
+        "perMin": 500,
+        "perExtraStop": 8000,
+        "surchargePerKg": 150,
+        "surchargeAboveKg": 300
+      },
+      "status": "aktif"
+    }
+  ],
+  "now": "2026-10-21T02:50:00.000Z"
+}

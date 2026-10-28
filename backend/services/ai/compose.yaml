@@ -1,0 +1,72 @@
+# The AI gateway on its own: it listens on 8091 and is called only by other services (console-api, backoffice-api and
+# the optimizer), never by a browser, so it has no CORS. It needs no database or Kafka, and it is the only place that holds the Meta
+# key. It joins the Docker network `loong` so that the callers find it as ai:8091; drop the network if they reach it
+# another way.
+#
+# Settings come from the shell or from a .env next to this file (never committed): see .env.example. Without
+# META_API_KEY the gateway still starts and answers every AI call with 503, which turns the AI features off.
+#
+#   docker compose -f services/ai/compose.yaml up --build
+#   docker compose -f services/ai/compose.yaml --env-file ../../.env up   # reuse backend/.env
+name: loong-ai
+
+services:
+  ai:
+    build:
+      context: ../..
+      dockerfile: services/ai/Dockerfile
+    image: loong/ai:dev
+    restart: unless-stopped
+    environment:
+      AI_ADDR: ":8091"
+      # The shared secret callers present as a bearer token (comma separated for one token per caller: console,
+      # back office and the optimizer each have their own). The default is for development only.
+      AI_TOKEN: ${AI_TOKEN:-dev-ai-token}
+      # Meta Model API. Empty values take the defaults (https://api.meta.ai/v1, muse-spark-1.3-contributor).
+      META_API_KEY: ${META_API_KEY:-}
+      META_BASE_URL: ${META_BASE_URL:-}
+      META_MODEL: ${META_MODEL:-}
+      META_TRANSCRIBE_MODEL: ${META_TRANSCRIBE_MODEL:-}
+      # Per-profile overrides; empty keeps the built-in value (see .env.example).
+      AI_COPILOT_MODEL: ${AI_COPILOT_MODEL:-}
+      AI_COPILOT_EFFORT: ${AI_COPILOT_EFFORT:-}
+      AI_COPILOT_MAX_TOKENS: ${AI_COPILOT_MAX_TOKENS:-}
+      AI_COPILOT_TIMEOUT: ${AI_COPILOT_TIMEOUT:-}
+      AI_VISION_MODEL: ${AI_VISION_MODEL:-}
+      AI_VISION_EFFORT: ${AI_VISION_EFFORT:-}
+      AI_VISION_MAX_TOKENS: ${AI_VISION_MAX_TOKENS:-}
+      AI_VISION_TIMEOUT: ${AI_VISION_TIMEOUT:-}
+      AI_INTENT_MODEL: ${AI_INTENT_MODEL:-}
+      AI_INTENT_EFFORT: ${AI_INTENT_EFFORT:-}
+      AI_INTENT_MAX_TOKENS: ${AI_INTENT_MAX_TOKENS:-}
+      AI_INTENT_TIMEOUT: ${AI_INTENT_TIMEOUT:-}
+      AI_INSIGHTS_MODEL: ${AI_INSIGHTS_MODEL:-}
+      AI_INSIGHTS_EFFORT: ${AI_INSIGHTS_EFFORT:-}
+      AI_INSIGHTS_MAX_TOKENS: ${AI_INSIGHTS_MAX_TOKENS:-}
+      AI_INSIGHTS_TIMEOUT: ${AI_INSIGHTS_TIMEOUT:-}
+      AI_REVIEW_MODEL: ${AI_REVIEW_MODEL:-}
+      AI_REVIEW_EFFORT: ${AI_REVIEW_EFFORT:-}
+      AI_REVIEW_MAX_TOKENS: ${AI_REVIEW_MAX_TOKENS:-}
+      AI_REVIEW_TIMEOUT: ${AI_REVIEW_TIMEOUT:-}
+      AI_REPORT_MODEL: ${AI_REPORT_MODEL:-}
+      AI_REPORT_EFFORT: ${AI_REPORT_EFFORT:-}
+      AI_REPORT_MAX_TOKENS: ${AI_REPORT_MAX_TOKENS:-}
+      AI_REPORT_TIMEOUT: ${AI_REPORT_TIMEOUT:-}
+      AI_TRANSCRIBE_TIMEOUT: ${AI_TRANSCRIBE_TIMEOUT:-}
+      AI_RATE_PER_MINUTE: ${AI_RATE_PER_MINUTE:-}
+      AI_RATE_BURST: ${AI_RATE_BURST:-}
+      AI_MAX_IN_FLIGHT: ${AI_MAX_IN_FLIGHT:-}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    ports:
+      - "127.0.0.1:8091:8091"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:8091/readyz || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    networks: [loong]
+
+networks:
+  loong:
+    external: true
+    name: loong

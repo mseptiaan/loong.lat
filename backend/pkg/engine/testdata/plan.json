@@ -1,0 +1,729 @@
+{
+  "tz": "America/Toronto",
+  "resources": [
+    {
+      "id": "truck-1",
+      "vehicleProfile": {
+        "type": "truck",
+        "withTraffic": true
+      },
+      "workingTimeWindow": {
+        "begin": "2026-09-14T05:00:00Z",
+        "end": "2026-09-14T20:00:00Z"
+      },
+      "departure": {
+        "lon": -75.7003,
+        "lat": 45.4236
+      },
+      "arrival": {
+        "lon": -75.7003,
+        "lat": 45.4236
+      },
+      "capacities": {
+        "weight": 1200,
+        "pallets": 12,
+        "weightAmbient": 400,
+        "weightChilled": 250,
+        "weightFrozen": 150
+      },
+      "preferredStopTags": [
+        "zone:downtown-byward"
+      ],
+      "tags": [
+        "driver"
+      ],
+      "breaks": [
+        {
+          "type": "workingDurationSlidingBreak",
+          "minBreakDuration": "PT30M",
+          "maxInterBreakDuration": "PT6H"
+        }
+      ],
+      "maxWorkingDuration": "PT9H",
+      "cost": {
+        "workedHours": {
+          "costFloor": 8,
+          "overcostFloor": 10,
+          "overcostCoeff": 1.25
+        }
+      }
+    },
+    {
+      "id": "truck-2",
+      "vehicleProfile": {
+        "type": "truck",
+        "withTraffic": true
+      },
+      "workingTimeWindow": {
+        "begin": "2026-09-14T05:00:00Z",
+        "end": "2026-09-14T20:00:00Z"
+      },
+      "departure": {
+        "lon": -75.7003,
+        "lat": 45.4236
+      },
+      "arrival": {
+        "lon": -75.7003,
+        "lat": 45.4236
+      },
+      "capacities": {
+        "weight": 1200,
+        "pallets": 12,
+        "weightAmbient": 400,
+        "weightChilled": 250,
+        "weightFrozen": 150
+      },
+      "tags": [
+        "driver"
+      ],
+      "maxWorkingDuration": "PT9H"
+    },
+    {
+      "id": "driver-1",
+      "vehicleProfile": {
+        "type": "truck"
+      },
+      "workingTimeWindow": {
+        "begin": "2026-09-14T06:00:00Z",
+        "end": "2026-09-14T18:00:00Z"
+      },
+      "departure": {
+        "lon": -75.7003,
+        "lat": 45.4236
+      },
+      "arrival": {
+        "lon": -75.7003,
+        "lat": 45.4236
+      },
+      "tags": [
+        "driver"
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": "order-ambient-0",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-pickup-ambient-0",
+          "position": {
+            "lon": -75.7003,
+            "lat": 45.4236
+          },
+          "kind": "pickup",
+          "operationDuration": "PT5M",
+          "capacities": {
+            "weightAmbient": 40
+          }
+        },
+        {
+          "type": "single",
+          "id": "stop-ambient-0",
+          "position": {
+            "lon": -75.561625,
+            "lat": 45.430974
+          },
+          "kind": "delivery",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weightAmbient": 40
+          }
+        }
+      ],
+      "successiveStops": true
+    },
+    {
+      "id": "order-ambient-1",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-pickup-ambient-1",
+          "position": {
+            "lon": -75.7003,
+            "lat": 45.4236
+          },
+          "kind": "pickup",
+          "operationDuration": "PT5M",
+          "capacities": {
+            "weightAmbient": 35
+          }
+        },
+        {
+          "type": "single",
+          "id": "stop-ambient-1",
+          "position": {
+            "lon": -75.594541,
+            "lat": 45.353934
+          },
+          "kind": "delivery",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weightAmbient": 35
+          }
+        }
+      ],
+      "successiveStops": true
+    },
+    {
+      "id": "order-chilled-0",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-pickup-chilled-0",
+          "position": {
+            "lon": -75.7003,
+            "lat": 45.4236
+          },
+          "kind": "pickup",
+          "operationDuration": "PT5M",
+          "capacities": {
+            "weightChilled": 30
+          }
+        },
+        {
+          "type": "single",
+          "id": "stop-chilled-0",
+          "position": {
+            "lon": -75.754102,
+            "lat": 45.386179
+          },
+          "kind": "delivery",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weightChilled": 30
+          }
+        }
+      ],
+      "successiveStops": true
+    },
+    {
+      "id": "order-chilled-1",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-pickup-chilled-1",
+          "position": {
+            "lon": -75.7003,
+            "lat": 45.4236
+          },
+          "kind": "pickup",
+          "operationDuration": "PT5M",
+          "capacities": {
+            "weightChilled": 25
+          }
+        },
+        {
+          "type": "single",
+          "id": "stop-chilled-1",
+          "position": {
+            "lon": -75.686552,
+            "lat": 45.539959
+          },
+          "kind": "delivery",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weightChilled": 25
+          }
+        }
+      ],
+      "successiveStops": true
+    },
+    {
+      "id": "order-frozen-0",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-pickup-frozen-0",
+          "position": {
+            "lon": -75.7003,
+            "lat": 45.4236
+          },
+          "kind": "pickup",
+          "operationDuration": "PT5M",
+          "capacities": {
+            "weightFrozen": 20
+          }
+        },
+        {
+          "type": "single",
+          "id": "stop-frozen-0",
+          "position": {
+            "lon": -75.59784,
+            "lat": 45.419369
+          },
+          "kind": "delivery",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weightFrozen": 20
+          }
+        }
+      ],
+      "successiveStops": true
+    },
+    {
+      "id": "order-frozen-1",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-pickup-frozen-1",
+          "position": {
+            "lon": -75.7003,
+            "lat": 45.4236
+          },
+          "kind": "pickup",
+          "operationDuration": "PT5M",
+          "capacities": {
+            "weightFrozen": 18
+          }
+        },
+        {
+          "type": "single",
+          "id": "stop-frozen-1",
+          "position": {
+            "lon": -75.703892,
+            "lat": 45.515718
+          },
+          "kind": "delivery",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weightFrozen": 18
+          }
+        }
+      ],
+      "successiveStops": true
+    },
+    {
+      "id": "order-afternoon-0",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-pickup-afternoon-0",
+          "position": {
+            "lon": -75.7003,
+            "lat": 45.4236
+          },
+          "kind": "pickup",
+          "operationDuration": "PT5M",
+          "capacities": {
+            "pallets": 1
+          }
+        },
+        {
+          "type": "single",
+          "id": "stop-afternoon-0",
+          "position": {
+            "lon": -75.813258,
+            "lat": 45.471474
+          },
+          "kind": "delivery",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "pallets": 1
+          },
+          "tags": [
+            "zone:downtown-byward"
+          ],
+          "authorizedTimeWindows": [
+            {
+              "begin": "2026-09-14T08:00:00Z",
+              "end": "2026-09-14T18:00:00Z"
+            }
+          ],
+          "preferredTimeWindows": [
+            {
+              "begin": "2026-09-14T14:00:00Z",
+              "end": "2026-09-14T16:00:00Z"
+            }
+          ]
+        }
+      ],
+      "successiveStops": true
+    },
+    {
+      "id": "order-afternoon-1",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-pickup-afternoon-1",
+          "position": {
+            "lon": -75.7003,
+            "lat": 45.4236
+          },
+          "kind": "pickup",
+          "operationDuration": "PT5M",
+          "capacities": {
+            "pallets": 1
+          }
+        },
+        {
+          "type": "single",
+          "id": "stop-afternoon-1",
+          "position": {
+            "lon": -75.769545,
+            "lat": 45.382913
+          },
+          "kind": "delivery",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "pallets": 1
+          },
+          "tags": [
+            "zone:downtown-byward"
+          ]
+        }
+      ],
+      "successiveStops": true
+    },
+    {
+      "id": "order-afternoon-2",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-pickup-afternoon-2",
+          "position": {
+            "lon": -75.7003,
+            "lat": 45.4236
+          },
+          "kind": "pickup",
+          "operationDuration": "PT5M",
+          "capacities": {
+            "pallets": 1
+          }
+        },
+        {
+          "type": "single",
+          "id": "stop-afternoon-2",
+          "position": {
+            "lon": -75.826931,
+            "lat": 45.345106
+          },
+          "kind": "delivery",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "pallets": 1
+          },
+          "tags": [
+            "zone:overflow"
+          ]
+        }
+      ],
+      "successiveStops": true
+    },
+    {
+      "id": "order-afternoon-3",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-pickup-afternoon-3",
+          "position": {
+            "lon": -75.7003,
+            "lat": 45.4236
+          },
+          "kind": "pickup",
+          "operationDuration": "PT5M",
+          "capacities": {
+            "pallets": 1
+          }
+        },
+        {
+          "type": "single",
+          "id": "stop-afternoon-3",
+          "position": {
+            "lon": -75.723221,
+            "lat": 45.313933
+          },
+          "kind": "delivery",
+          "operationDuration": "PT8M",
+          "capacities": {
+            "pallets": 1
+          },
+          "tags": [
+            "zone:overflow"
+          ]
+        }
+      ],
+      "successiveStops": true
+    },
+    {
+      "id": "order-keychain-0",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-keychain-0",
+          "position": {
+            "lon": -75.766749,
+            "lat": 45.398496
+          },
+          "kind": "delivery",
+          "operationDuration": "PT5M",
+          "tags": [
+            "keychain:trusted-set-1"
+          ],
+          "preferredTimeWindows": [
+            {
+              "begin": "2026-09-14T06:30:00Z",
+              "end": "2026-09-14T08:00:00Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-keychain-1",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-keychain-1",
+          "position": {
+            "lon": -75.843889,
+            "lat": 45.428816
+          },
+          "kind": "delivery",
+          "operationDuration": "PT5M",
+          "tags": [
+            "keychain:trusted-set-1"
+          ],
+          "preferredTimeWindows": [
+            {
+              "begin": "2026-09-14T06:30:00Z",
+              "end": "2026-09-14T08:00:00Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-keychain-2",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-keychain-2",
+          "position": {
+            "lon": -75.63488,
+            "lat": 45.408276
+          },
+          "kind": "delivery",
+          "operationDuration": "PT5M",
+          "tags": [
+            "keychain:trusted-set-1"
+          ],
+          "preferredTimeWindows": [
+            {
+              "begin": "2026-09-14T06:30:00Z",
+              "end": "2026-09-14T08:00:00Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-delivery-0",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-delivery-0",
+          "position": {
+            "lon": -75.798701,
+            "lat": 45.484895
+          },
+          "kind": "delivery",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weightAmbient": 15
+          },
+          "tags": [
+            "zone:downtown-byward"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-delivery-1",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-delivery-1",
+          "position": {
+            "lon": -75.866902,
+            "lat": 45.400397
+          },
+          "kind": "delivery",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weightAmbient": 15
+          },
+          "tags": [
+            "zone:overflow"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-delivery-2",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-delivery-2",
+          "position": {
+            "lon": -75.869268,
+            "lat": 45.39641
+          },
+          "kind": "delivery",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weightAmbient": 15
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-delivery-3",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-delivery-3",
+          "position": {
+            "lon": -75.600242,
+            "lat": 45.333107
+          },
+          "kind": "delivery",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weightAmbient": 15
+          },
+          "tags": [
+            "zone:downtown-byward"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-delivery-4",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-delivery-4",
+          "position": {
+            "lon": -75.640787,
+            "lat": 45.308442
+          },
+          "kind": "delivery",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weightAmbient": 15
+          },
+          "tags": [
+            "zone:overflow"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-delivery-5",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-delivery-5",
+          "position": {
+            "lon": -75.756522,
+            "lat": 45.465026
+          },
+          "kind": "delivery",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weightAmbient": 15
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-delivery-6",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-delivery-6",
+          "position": {
+            "lon": -75.624731,
+            "lat": 45.469789
+          },
+          "kind": "delivery",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weightAmbient": 15
+          },
+          "tags": [
+            "zone:downtown-byward"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-delivery-7",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-delivery-7",
+          "position": {
+            "lon": -75.727749,
+            "lat": 45.511027
+          },
+          "kind": "delivery",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weightAmbient": 15
+          },
+          "tags": [
+            "zone:overflow"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-delivery-8",
+      "stops": [
+        {
+          "type": "single",
+          "id": "stop-delivery-8",
+          "position": {
+            "lon": -75.779947,
+            "lat": 45.368845
+          },
+          "kind": "delivery",
+          "operationDuration": "PT6M",
+          "capacities": {
+            "weightAmbient": 15
+          }
+        }
+      ]
+    }
+  ],
+  "objectives": [
+    "maximizeMandatoryStops",
+    "maximizePreferredStops",
+    "minimizeDelay",
+    "minimizeCosts",
+    "minimizeDistance",
+    "minimizeLargestTourDuration",
+    "minimizeWorkingDuration"
+  ],
+  "globalConstraints": [
+    {
+      "type": "maxCumulatedCost",
+      "maximum": 1,
+      "costsByResourceTag": {
+        "driver": {
+          "costsByStopTag": {
+            "keychain:trusted-set-1": {
+              "using": 1
+            }
+          }
+        }
+      },
+      "name": "one-driver-per-key-set"
+    }
+  ],
+  "properties": {
+    "name": "Cold-chain last-mile — Ottawa refrigerated network"
+  }
+}

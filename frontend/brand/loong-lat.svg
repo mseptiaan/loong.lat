@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.1 64" role="img" aria-label="loong.lat">
+<title>loong.lat</title>
+<rect width="64" height="64" rx="18" fill="#00618f"/>
+<g fill="none">
+  <path d="M11 32a13 13 0 1 0 26 0a13 13 0 1 0 -26 0" stroke="#fbfaf7" stroke-width="5"/>
+  <path d="M27 32a13 13 0 1 0 26 0a13 13 0 1 0 -26 0" stroke="#fbfaf7" stroke-width="5"/>
+  <path d="M28.52 25.89A13 13 0 0 1 36.86 19.39" stroke="#00618f" stroke-width="9"/>
+  <path d="M28.13 26.71A13 13 0 0 1 37.75 19.2" stroke="#fbfaf7" stroke-width="5"/>
+  <path d="M35.48 38.11A13 13 0 0 1 27.14 44.61" stroke="#00618f" stroke-width="9"/>
+  <path d="M35.87 37.29A13 13 0 0 1 26.25 44.8" stroke="#fbfaf7" stroke-width="5"/>
+</g>
+<g transform="translate(78 0.2) scale(1.06)" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M2.5 7V40M33.5 30A10 10 0 1 1 13.5 30A10 10 0 1 1 33.5 30M64.5 30A10 10 0 1 1 44.5 30A10 10 0 1 1 64.5 30M75.5 20V40M75.5 30A10 10 0 0 1 95.5 30V40M126.5 30A10 10 0 1 1 106.5 30A10 10 0 1 1 126.5 30M126.5 20V42A10 10 0 0 1 116.5 52H111.5" stroke="#201914"/>
+  <path d="M150 7V40M181 30A10 10 0 1 1 161 30A10 10 0 1 1 181 30M181 20V40M198 12V34A6 6 0 0 0 204 40H206M192 20H207" stroke="#00618f"/>
+  <rect x="135" y="36" width="6.5" height="6.5" rx="1.8" fill="#00618f"/>
+</g>
+</svg>

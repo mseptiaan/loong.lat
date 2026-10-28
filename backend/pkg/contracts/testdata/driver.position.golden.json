@@ -1,0 +1,20 @@
+{
+  "id": "0198a5d2-7c10-7e5a-9c3b-1d2e3f4a5b04",
+  "type": "driver.position",
+  "version": 1,
+  "source": "driver-api",
+  "key": "drv-1",
+  "aggregateVersion": 128,
+  "occurredAt": "2026-10-21T03:15:00.000Z",
+  "traceId": "4bf92f3577b34da6a3ce929d0e0e4736",
+  "data": {
+    "driverId": "drv-1",
+    "routeId": "rt-1",
+    "position": {
+      "lat": -6.2688,
+      "lng": 106.8132
+    },
+    "speedKmh": 27.4,
+    "recordedAt": "2026-10-21T03:20:00.000Z"
+  }
+}

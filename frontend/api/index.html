@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>loong.lat · Mock backend</title>
+    <style>
+      body { margin: 0; padding: 24px; font: 14px/1.5 ui-sans-serif, system-ui, sans-serif; color: #2a2622; background: #f6f3ef; }
+      code { font: 13px ui-monospace, 'SF Mono', Menlo, monospace; }
+      dt { color: #5f5953; }
+      dd { margin: 0 0 8px; }
+    </style>
+  </head>
+  <body>
+    <!-- teks Inggris = cadangan sebelum skrip jalan; src/main.ts menimpanya sesuai bahasa (shell.apiHost.*) -->
+    <h1 id="heading" style="font-size: 20px; margin: 0 0 4px">loong.lat mock backend</h1>
+    <p id="intro" style="margin: 0 0 16px; max-width: 60ch">
+      This page runs in a hidden iframe inside the Dashboard, Backoffice, and Driver apps. It stores the mock data
+      and shares it with all three apps, because each app has its own hostname (origin).
+    </p>
+    <dl id="status"></dl>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

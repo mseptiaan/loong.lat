@@ -1,0 +1,20 @@
+{
+  "name": "@loong/api-host",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "api.<domain>: backend tiruan di iframe tersembunyi. Menyimpan dan membagi state ke console, backoffice, dan driver. Diganti backend asli di hostname yang sama.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@loong/domain": "*",
+    "@loong/i18n": "*",
+    "@loong/mock-api": "*"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4"
+  }
+}

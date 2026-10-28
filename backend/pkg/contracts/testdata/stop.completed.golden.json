@@ -1,0 +1,45 @@
+{
+  "id": "0198a5d2-7c10-7e5a-9c3b-1d2e3f4a5b03",
+  "type": "stop.completed",
+  "version": 1,
+  "source": "driver-api",
+  "key": "rt-1",
+  "aggregateVersion": 4,
+  "occurredAt": "2026-10-21T03:15:00.000Z",
+  "traceId": "4bf92f3577b34da6a3ce929d0e0e4736",
+  "data": {
+    "planId": "plan-1",
+    "routeId": "rt-1",
+    "stopId": "stop-2",
+    "completedAt": "2026-10-21T03:46:00.000Z",
+    "proof": {
+      "kind": "foto",
+      "at": "2026-10-21T03:46:00.000Z",
+      "photo": "data:image/jpeg;base64,/9j/4AAQSkZJRg==",
+      "analysis": {
+        "summary": {
+          "key": "srv.proof.summary.ok"
+        },
+        "checks": [
+          {
+            "key": "recipient",
+            "result": "ok",
+            "note": {
+              "key": "srv.proof.recipient.ok"
+            }
+          },
+          {
+            "key": "parcel",
+            "result": "unclear",
+            "note": {
+              "key": "srv.proof.parcel.unclear"
+            }
+          }
+        ],
+        "confidence": 0.81,
+        "model": "muse-spark",
+        "analyzedAt": "2026-10-21T03:46:00.000Z"
+      }
+    }
+  }
+}

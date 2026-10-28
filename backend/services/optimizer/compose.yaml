@@ -1,0 +1,56 @@
+# The optimizer on its own: it listens on 8090 and is called only by other services (console-api), never by a
+# browser, so it has no CORS. It needs no database or Kafka. It joins the Docker network `loong` so that
+# console-api finds it as optimizer:8090; drop the network if the callers reach it another way.
+#
+# Settings come from the shell or from a .env next to this file (never committed): see .env.example. Modal and
+# Mapbox are optional; without them the optimizer solves in process and estimates road distances.
+#
+# AI_URL (e.g. http://ai:8091 when the gateway runs on the `loong` network, see services/ai/compose.yaml) and AI_TOKEN
+# (the optimizer's own token at the gateway) let the model review the rounds of a reviewed quote; without AI_URL the
+# built-in rules review. OPTIMIZER_TIMEOUT_DEEP bounds a thorough or reviewed quote, OPTIMIZER_ROUNDS its review rounds.
+#
+#   docker compose -f services/optimizer/compose.yaml up --build
+#   docker compose -f services/optimizer/compose.yaml --env-file ../../.env up   # reuse backend/.env
+name: loong-optimizer
+
+services:
+  optimizer:
+    build:
+      context: ../..
+      dockerfile: services/optimizer/Dockerfile
+    image: loong/optimizer:dev
+    restart: unless-stopped
+    environment:
+      OPTIMIZER_ADDR: ":8090"
+      # The shared secret callers present as a bearer token. The default is for development only.
+      OPTIMIZER_TOKEN: ${OPTIMIZER_TOKEN:-dev-optimizer-token}
+      RUNNER: ${RUNNER:-local}
+      OPTIMIZER_FALLBACK: ${OPTIMIZER_FALLBACK:-}
+      OPTIMIZER_TIMEOUT_DEEP: ${OPTIMIZER_TIMEOUT_DEEP:-150s}
+      OPTIMIZER_ROUNDS: ${OPTIMIZER_ROUNDS:-3}
+      AI_URL: ${AI_URL:-}
+      AI_TOKEN: ${AI_TOKEN:-}
+      MAPBOX_TOKEN: ${MAPBOX_TOKEN:-}
+      ROAD_ALLOW_TOLLS: ${ROAD_ALLOW_TOLLS:-false}
+      MODAL_TOKEN_ID: ${MODAL_TOKEN_ID:-}
+      MODAL_TOKEN_SECRET: ${MODAL_TOKEN_SECRET:-}
+      MODAL_APP: ${MODAL_APP:-loong-optimizer}
+      MODAL_VOLUME: ${MODAL_VOLUME:-loong-solver}
+      MODAL_SOLVER_VERSION: ${MODAL_SOLVER_VERSION:-}
+      MODAL_POOL_SIZE: ${MODAL_POOL_SIZE:-2}
+      MODAL_IDLE_TIMEOUT: ${MODAL_IDLE_TIMEOUT:-5m}
+      MODAL_PREWARM: ${MODAL_PREWARM:-1}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    ports:
+      - "127.0.0.1:8090:8090"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:8090/readyz || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    networks: [loong]
+
+networks:
+  loong:
+    external: true
+    name: loong

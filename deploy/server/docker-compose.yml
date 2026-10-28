@@ -1,0 +1,250 @@
+# loong.lat di server Oracle ARM (129.150.47.32), di belakang Traefik milik server (project compose `ubuntu`, jaringan
+# `ubuntu_default`, certresolver `leresolver`). Semua image dari Docker Hub mseptiaan/loong.lat (linux/arm64).
+#
+#   loong.lat, console. / backoffice. / driver.loong.lat  -> web (nginx, keempat situs statis)
+#   api-console.loong.lat    -> console-api
+#   api-backoffice.loong.lat -> backoffice-api
+#   api-driver.loong.lat     -> driver-api
+#   optimizer, ai, postgres, redpanda: hanya di jaringan internal `loong`, tanpa domain dan tanpa port publik.
+#
+# Pemakaian (di /home/ubuntu/loong, dengan .env di sebelah berkas ini; lihat .env.example):
+#   docker compose up -d            # project bernama `loong` (lihat `name`), terpisah dari stack lain di server
+#   docker compose pull && docker compose up -d   # perbarui ke image terbaru
+name: loong
+
+x-api: &api
+  restart: unless-stopped
+  networks: [loong, edge]
+  depends_on:
+    postgres: { condition: service_healthy }
+    topics: { condition: service_completed_successfully }
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?}
+      # dibaca postgres/init.sh: satu database dan satu role per layanan, semuanya dengan kata sandi ini
+      LOONG_DEV_DB_PASSWORD: ${DB_PASSWORD:?}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./postgres/init.sh:/docker-entrypoint-initdb.d/10-loong.sh:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d postgres"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    networks: [loong]
+    labels: [traefik.enable=false]
+
+  redpanda:
+    image: docker.redpanda.com/redpandadata/redpanda:v26.1.1
+    restart: unless-stopped
+    command:
+      - redpanda
+      - start
+      - --mode=dev-container
+      - --smp=1
+      - --memory=1G
+      - --default-log-level=warn
+      - --kafka-addr=0.0.0.0:9092
+      - --advertise-kafka-addr=redpanda:9092
+      - --rpc-addr=redpanda:33145
+      - --advertise-rpc-addr=redpanda:33145
+    volumes:
+      - redpanda-data:/var/lib/redpanda/data
+    healthcheck:
+      test: ["CMD-SHELL", "rpk cluster health | grep -E 'Healthy:.+true' || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 10s
+    networks: [loong]
+    labels: [traefik.enable=false]
+
+  # membuat topik Kafka (dan DLQ-nya) sekali sebelum layanan mulai; aman dijalankan ulang
+  topics:
+    image: mseptiaan/loong.lat:topics${IMAGE_SUFFIX:-}
+    command: ["-brokers", "redpanda:9092", "-wait", "60s"]
+    depends_on:
+      redpanda: { condition: service_healthy }
+    restart: "no"
+    networks: [loong]
+    labels: [traefik.enable=false]
+
+  ai:
+    image: mseptiaan/loong.lat:ai${IMAGE_SUFFIX:-}
+    restart: unless-stopped
+    environment:
+      AI_ADDR: ":8091"
+      # satu token per pemanggil: console, backoffice, optimizer
+      AI_TOKEN: ${AI_TOKEN_CONSOLE:?},${AI_TOKEN_BACKOFFICE:?},${AI_TOKEN_OPTIMIZER:?}
+      META_API_KEY: ${META_API_KEY:-}
+      META_BASE_URL: ${META_BASE_URL:-}
+      META_MODEL: ${META_MODEL:-}
+      META_TRANSCRIBE_MODEL: ${META_TRANSCRIBE_MODEL:-}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:8091/readyz || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 20
+    networks: [loong]
+    labels: [traefik.enable=false]
+
+  optimizer:
+    image: mseptiaan/loong.lat:optimizer${IMAGE_SUFFIX:-}
+    restart: unless-stopped
+    environment:
+      OPTIMIZER_ADDR: ":8090"
+      OPTIMIZER_TOKEN: ${OPTIMIZER_TOKEN:?}
+      RUNNER: ${RUNNER:-modal}
+      OPTIMIZER_TIMEOUT_DEEP: ${OPTIMIZER_TIMEOUT_DEEP:-150s}
+      OPTIMIZER_ROUNDS: ${OPTIMIZER_ROUNDS:-3}
+      AI_URL: http://ai:8091
+      AI_TOKEN: ${AI_TOKEN_OPTIMIZER:?}
+      MAPBOX_TOKEN: ${MAPBOX_TOKEN:-}
+      MODAL_TOKEN_ID: ${MODAL_TOKEN_ID:-}
+      MODAL_TOKEN_SECRET: ${MODAL_TOKEN_SECRET:-}
+      MODAL_APP: ${MODAL_APP:-loong-optimizer}
+      MODAL_VOLUME: ${MODAL_VOLUME:-loong-solver}
+      # harus sama dengan versi engine yang di-bake ke image optimizer (build-arg VERSION)
+      MODAL_SOLVER_VERSION: ${MODAL_SOLVER_VERSION:?}
+      MODAL_POOL_SIZE: ${MODAL_POOL_SIZE:-2}
+      MODAL_IDLE_TIMEOUT: ${MODAL_IDLE_TIMEOUT:-5m}
+      MODAL_PREWARM: ${MODAL_PREWARM:-1}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:8090/readyz || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 20
+    networks: [loong]
+    labels: [traefik.enable=false]
+
+  console-api:
+    <<: *api
+    image: mseptiaan/loong.lat:console-api${IMAGE_SUFFIX:-}
+    environment:
+      HTTP_ADDR: ":8083"
+      DATABASE_URL: postgres://console:${DB_PASSWORD:?}@postgres:5432/console?sslmode=disable
+      KAFKA_BROKERS: redpanda:9092
+      OPTIMIZER_URL: http://optimizer:8090
+      OPTIMIZER_TOKEN: ${OPTIMIZER_TOKEN:?}
+      CORS_ORIGINS: https://console.${DOMAIN:-loong.lat}
+      # pembayaran sungguhan belum ada: top up demo dilunasi lewat tombol simulasi (klien dibangun VITE_SIMULATE_PAYMENTS=1)
+      SIMULATE_PAYMENTS: ${SIMULATE_PAYMENTS:-true}
+      AI_URL: http://ai:8091
+      AI_TOKEN: ${AI_TOKEN_CONSOLE:?}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:8083/readyz || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 20
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=ubuntu_default
+      - traefik.http.routers.loong-console-api.rule=Host(`api-console.${DOMAIN:-loong.lat}`)
+      - traefik.http.routers.loong-console-api.entrypoints=websecure
+      - traefik.http.routers.loong-console-api.tls=true
+      - traefik.http.routers.loong-console-api.middlewares=loong-headers
+      - traefik.http.routers.loong-console-api.tls.certresolver=leresolver
+      - traefik.http.services.loong-console-api.loadbalancer.server.port=8083
+
+  backoffice-api:
+    <<: *api
+    image: mseptiaan/loong.lat:backoffice-api${IMAGE_SUFFIX:-}
+    environment:
+      HTTP_ADDR: ":8082"
+      DATABASE_URL: postgres://backoffice:${DB_PASSWORD:?}@postgres:5432/backoffice?sslmode=disable
+      KAFKA_BROKERS: redpanda:9092
+      CORS_ORIGINS: https://backoffice.${DOMAIN:-loong.lat}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:?}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?}
+      ADMIN_NAME: ${ADMIN_NAME:-Admin}
+      DISPATCH_WORKER: "true"
+      # dua driver demo (PIN 123456) bila armada masih kosong; matikan bila akun driver sungguhan
+      SEED_DEMO: ${SEED_DEMO:-true}
+      AI_URL: http://ai:8091
+      AI_TOKEN: ${AI_TOKEN_BACKOFFICE:?}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:8082/readyz || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 20
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=ubuntu_default
+      - traefik.http.routers.loong-backoffice-api.rule=Host(`api-backoffice.${DOMAIN:-loong.lat}`)
+      - traefik.http.routers.loong-backoffice-api.entrypoints=websecure
+      - traefik.http.routers.loong-backoffice-api.tls=true
+      - traefik.http.routers.loong-backoffice-api.middlewares=loong-headers
+      - traefik.http.routers.loong-backoffice-api.tls.certresolver=leresolver
+      - traefik.http.services.loong-backoffice-api.loadbalancer.server.port=8082
+
+  driver-api:
+    <<: *api
+    image: mseptiaan/loong.lat:driver-api${IMAGE_SUFFIX:-}
+    environment:
+      HTTP_ADDR: ":8081"
+      DATABASE_URL: postgres://driver:${DB_PASSWORD:?}@postgres:5432/driver?sslmode=disable
+      KAFKA_BROKERS: redpanda:9092
+      CORS_ORIGINS: https://driver.${DOMAIN:-loong.lat}
+      DELAY_SWEEP_INTERVAL: 30s
+      AI_URL: http://ai:8091
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:8081/readyz || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 20
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=ubuntu_default
+      - traefik.http.routers.loong-driver-api.rule=Host(`api-driver.${DOMAIN:-loong.lat}`)
+      - traefik.http.routers.loong-driver-api.entrypoints=websecure
+      - traefik.http.routers.loong-driver-api.tls=true
+      - traefik.http.routers.loong-driver-api.middlewares=loong-headers
+      - traefik.http.routers.loong-driver-api.tls.certresolver=leresolver
+      - traefik.http.services.loong-driver-api.loadbalancer.server.port=8081
+
+  web:
+    image: mseptiaan/loong.lat:web${IMAGE_SUFFIX:-}
+    restart: unless-stopped
+    networks: [edge]
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=ubuntu_default
+      - traefik.http.routers.loong-web.rule=Host(`${DOMAIN:-loong.lat}`) || Host(`console.${DOMAIN:-loong.lat}`) || Host(`backoffice.${DOMAIN:-loong.lat}`) || Host(`driver.${DOMAIN:-loong.lat}`)
+      - traefik.http.routers.loong-web.entrypoints=websecure
+      - traefik.http.routers.loong-web.tls=true
+      - traefik.http.routers.loong-web.middlewares=loong-headers
+      - traefik.http.routers.loong-web.tls.certresolver=leresolver
+      - traefik.http.services.loong-web.loadbalancer.server.port=80
+      # http:// -> https:// untuk semua host loong (tantangan ACME di entrypoint web tetap dilayani Traefik lebih dulu)
+      - traefik.http.routers.loong-http.rule=Host(`${DOMAIN:-loong.lat}`) || Host(`console.${DOMAIN:-loong.lat}`) || Host(`backoffice.${DOMAIN:-loong.lat}`) || Host(`driver.${DOMAIN:-loong.lat}`) || Host(`api-console.${DOMAIN:-loong.lat}`) || Host(`api-backoffice.${DOMAIN:-loong.lat}`) || Host(`api-driver.${DOMAIN:-loong.lat}`)
+      - traefik.http.routers.loong-http.entrypoints=web
+      - traefik.http.routers.loong-http.middlewares=loong-https
+      - traefik.http.routers.loong-http.service=loong-web
+      - traefik.http.middlewares.loong-https.redirectscheme.scheme=https
+      - traefik.http.middlewares.loong-https.redirectscheme.permanent=true
+      # header keamanan bersama, dipakai router web dan ketiga API
+      - traefik.http.middlewares.loong-headers.headers.stsSeconds=31536000
+      - traefik.http.middlewares.loong-headers.headers.stsIncludeSubdomains=true
+      - traefik.http.middlewares.loong-headers.headers.contentTypeNosniff=true
+      - traefik.http.middlewares.loong-headers.headers.frameDeny=true
+      - traefik.http.middlewares.loong-headers.headers.referrerPolicy=strict-origin-when-cross-origin
+
+volumes:
+  postgres-data:
+  redpanda-data:
+
+networks:
+  loong:
+  # jaringan Traefik milik server
+  edge:
+    name: ubuntu_default
+    external: true

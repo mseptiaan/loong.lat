@@ -1,0 +1,160 @@
+{
+  "id": "0198a5d2-7c10-7e5a-9c3b-1d2e3f4a5b02",
+  "type": "route.assigned",
+  "version": 1,
+  "source": "backoffice-api",
+  "key": "rt-1",
+  "aggregateVersion": 1,
+  "occurredAt": "2026-10-21T03:15:00.000Z",
+  "traceId": "4bf92f3577b34da6a3ce929d0e0e4736",
+  "data": {
+    "planId": "plan-1",
+    "planCode": "PL-2041",
+    "customerName": "Dina Pramesti",
+    "driverId": "drv-1",
+    "vehicleId": "veh-1",
+    "startAt": "2026-10-21T03:17:00.000Z",
+    "route": {
+      "id": "rt-1",
+      "planId": "plan-1",
+      "vehicleType": "motor",
+      "vehicleId": "veh-1",
+      "driverId": "drv-1",
+      "status": "ditugaskan",
+      "startPosition": {
+        "lat": -6.2711,
+        "lng": 106.8121
+      },
+      "startAt": "2026-10-21T03:15:00.000Z",
+      "stops": [
+        {
+          "id": "stop-1",
+          "seq": 1,
+          "kind": "ambil",
+          "shipmentId": "shp-1",
+          "waypoint": {
+            "name": "Kemang Village",
+            "address": "Jl. Pangeran Antasari No.36, Jakarta Selatan",
+            "position": {
+              "lat": -6.2694,
+              "lng": 106.8143
+            },
+            "placeId": "pl-Kemang Village",
+            "contactName": "Dina",
+            "contactPhone": "081234567801"
+          },
+          "legKm": 2.4,
+          "legMin": 8.5,
+          "etaMin": 8.5,
+          "arriveAt": "2026-10-21T03:24:00.000Z",
+          "status": "menunggu",
+          "itemsSummary": {
+            "key": "dom.itemsSummary",
+            "params": {
+              "count": 2,
+              "weightKg": 4
+            }
+          },
+          "items": [
+            {
+              "name": "Kardus sedang",
+              "catalogKey": "box_m",
+              "qty": 2,
+              "detail": {
+                "key": "dom.stopItem.detail",
+                "params": {
+                  "dims": "40×30×30",
+                  "weightKg": 4
+                }
+              },
+              "fragile": true
+            }
+          ]
+        },
+        {
+          "id": "stop-2",
+          "seq": 2,
+          "kind": "antar",
+          "shipmentId": "shp-1",
+          "waypoint": {
+            "name": "Plaza Senayan",
+            "address": "Jl. Asia Afrika No.8, Jakarta Pusat",
+            "position": {
+              "lat": -6.2253,
+              "lng": 106.7995
+            },
+            "placeId": "pl-Plaza Senayan",
+            "contactName": "Raka",
+            "contactPhone": "081234567802",
+            "note": "Lobby barat"
+          },
+          "legKm": 6.1,
+          "legMin": 18,
+          "etaMin": 29.5,
+          "arriveAt": "2026-10-21T03:45:00.000Z",
+          "status": "menunggu",
+          "itemsSummary": {
+            "key": "dom.itemsSummary",
+            "params": {
+              "count": 2,
+              "weightKg": 4
+            }
+          },
+          "items": [
+            {
+              "name": "Kardus sedang",
+              "catalogKey": "box_m",
+              "qty": 2,
+              "detail": {
+                "key": "dom.stopItem.detail",
+                "params": {
+                  "dims": "40×30×30",
+                  "weightKg": 4
+                }
+              },
+              "fragile": true
+            }
+          ],
+          "deliveryCode": "4821"
+        }
+      ],
+      "distanceKm": 8.5,
+      "durationMin": 29.5,
+      "costRp": 21500,
+      "fare": [
+        {
+          "label": {
+            "key": "dom.fare.base"
+          },
+          "amountRp": 6000
+        },
+        {
+          "label": {
+            "key": "dom.fare.distance",
+            "params": {
+              "km": 6.1
+            }
+          },
+          "amountRp": 10980
+        },
+        {
+          "label": {
+            "key": "dom.fare.time",
+            "params": {
+              "min": 18
+            }
+          },
+          "amountRp": 2700
+        },
+        {
+          "label": {
+            "key": "dom.fare.rounding"
+          },
+          "amountRp": 1820
+        }
+      ],
+      "totalWeightKg": 4,
+      "assignedAt": "2026-10-21T03:17:00.000Z"
+    }
+  }
+}

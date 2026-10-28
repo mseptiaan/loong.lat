@@ -1,0 +1,91 @@
+# Shared local infrastructure: one Postgres server (a database and role per service) and a single-node Redpanda
+# (Kafka API, schema registry) with its Console. There is no gateway: every API listens on its own port and is
+# started on its own, by `go run ./services/<name>/cmd/...` on the host or by the compose file in its own directory
+# (services/<name>/compose.yaml), which joins the Docker network `loong` created here to reach Postgres and Redpanda
+# by name (postgres:5432, redpanda:9092).
+#
+# Everything is published on 127.0.0.1 only, on ports chosen not to clash with a local Postgres (5432) or Kafka (9092):
+#
+#   postgres          127.0.0.1:55432
+#   redpanda (Kafka)  127.0.0.1:19092     schema registry 127.0.0.1:18081
+#   redpanda-console  http://127.0.0.1:18080
+#
+# Start it with scripts/dev-up.sh.
+name: loong
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: ${LOONG_DEV_DB_PASSWORD:-loong_dev}
+      # read by postgres/init.sh, which gives every service its own database and role
+      LOONG_DEV_DB_PASSWORD: ${LOONG_DEV_DB_PASSWORD:-loong_dev}
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./postgres/init.sh:/docker-entrypoint-initdb.d/10-loong.sh:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d postgres"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  redpanda:
+    image: docker.redpanda.com/redpandadata/redpanda:v26.1.1
+    restart: unless-stopped
+    command:
+      - redpanda
+      - start
+      - --mode=dev-container
+      - --smp=1
+      - --default-log-level=info
+      - --kafka-addr=internal://0.0.0.0:9092,external://0.0.0.0:19092
+      - --advertise-kafka-addr=internal://redpanda:9092,external://localhost:19092
+      - --schema-registry-addr=internal://0.0.0.0:8081,external://0.0.0.0:18081
+      - --rpc-addr=redpanda:33145
+      - --advertise-rpc-addr=redpanda:33145
+    ports:
+      - "127.0.0.1:19092:19092"
+      - "127.0.0.1:18081:18081"
+    volumes:
+      - redpanda-data:/var/lib/redpanda/data
+    healthcheck:
+      test: ["CMD-SHELL", "rpk cluster health | grep -E 'Healthy:.+true' || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 10s
+
+  redpanda-console:
+    image: docker.redpanda.com/redpandadata/console:v3.3.0
+    restart: unless-stopped
+    depends_on:
+      redpanda:
+        condition: service_healthy
+    entrypoint: /bin/sh
+    command: -c 'echo "$$CONSOLE_CONFIG_FILE" > /tmp/config.yml; /app/console'
+    environment:
+      CONFIG_FILEPATH: /tmp/config.yml
+      CONSOLE_CONFIG_FILE: |
+        kafka:
+          brokers: ["redpanda:9092"]
+          schemaRegistry:
+            enabled: true
+            urls: ["http://redpanda:8081"]
+        redpanda:
+          adminApi:
+            enabled: true
+            urls: ["http://redpanda:9644"]
+    ports:
+      - "127.0.0.1:18080:8080"
+
+volumes:
+  postgres-data:
+  redpanda-data:
+
+# A fixed name, so the compose file of each service can join this network as an external one.
+networks:
+  default:
+    name: loong

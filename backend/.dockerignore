@@ -1,0 +1,12 @@
+# Keep secrets, build output and tests out of every image build context.
+.env
+.env.*
+!.env.example
+**/.env
+bin/
+e2e/
+deploy/
+scripts/
+testdata/
+**/*_test.go
+**/*.md

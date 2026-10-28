@@ -1,0 +1,1543 @@
+{
+  "computedAt": "2026-10-21T02:50:00.000Z",
+  "baseline": {
+    "costRp": 104000,
+    "distanceKm": 11,
+    "durationMin": 21.1,
+    "avgDeliveryMin": 15.4,
+    "stops": 6,
+    "motor": 2,
+    "blindvan": 1
+  },
+  "options": [
+    {
+      "id": "PL-2041:termurah",
+      "preset": "termurah",
+      "label": {
+        "key": "dom.preset.termurah"
+      },
+      "recommended": true,
+      "headline": {
+        "key": "srv.engine.headline",
+        "params": {
+          "count": 6,
+          "fleet": {
+            "key": "srv.engine.fleet.both",
+            "params": {
+              "motor": {
+                "key": "srv.engine.fleet.motor",
+                "params": {
+                  "count": 1
+                }
+              },
+              "van": {
+                "key": "srv.engine.fleet.blindvan",
+                "params": {
+                  "count": 1
+                }
+              }
+            }
+          },
+          "time": 1792552896000
+        }
+      },
+      "routes": [
+        {
+          "id": "PL-2041:termurah:r1",
+          "planId": "PL-2041",
+          "vehicleType": "blindvan",
+          "status": "menunggu_driver",
+          "startPosition": {
+            "lat": -6.2608,
+            "lng": 106.8133
+          },
+          "startAt": "2026-10-21T02:56:00.000Z",
+          "stops": [
+            {
+              "id": "PL-2041:termurah:r1:s1",
+              "seq": 1,
+              "kind": "ambil",
+              "shipmentId": "s1",
+              "waypoint": {
+                "name": "Kemang Village",
+                "address": "Kemang Village, Jakarta",
+                "position": {
+                  "lat": -6.2608,
+                  "lng": 106.8133
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 0,
+              "legMin": 1,
+              "etaMin": 1,
+              "arriveAt": "2026-10-21T02:57:00.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 80
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 80,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            },
+            {
+              "id": "PL-2041:termurah:r1:s2",
+              "seq": 2,
+              "kind": "antar",
+              "shipmentId": "s1",
+              "waypoint": {
+                "name": "Senayan City",
+                "address": "Senayan City, Jakarta",
+                "position": {
+                  "lat": -6.2275,
+                  "lng": 106.8029
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 5,
+              "legMin": 13.1,
+              "etaMin": 18.1,
+              "arriveAt": "2026-10-21T03:14:06.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 80
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 80,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            }
+          ],
+          "distanceKm": 5,
+          "durationMin": 21.1,
+          "costRp": 77500,
+          "fare": [
+            {
+              "label": {
+                "key": "srv.engine.fare.base"
+              },
+              "amountRp": 45000
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.distance",
+                "params": {
+                  "km": 4.963
+                }
+              },
+              "amountRp": 22334
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.time",
+                "params": {
+                  "min": 20.1
+                }
+              },
+              "amountRp": 10050
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.rounding"
+              },
+              "amountRp": 116
+            }
+          ],
+          "totalWeightKg": 80
+        },
+        {
+          "id": "PL-2041:termurah:r2",
+          "planId": "PL-2041",
+          "vehicleType": "motor",
+          "status": "menunggu_driver",
+          "startPosition": {
+            "lat": -6.2608,
+            "lng": 106.8133
+          },
+          "startAt": "2026-10-21T02:56:00.000Z",
+          "stops": [
+            {
+              "id": "PL-2041:termurah:r2:s1",
+              "seq": 1,
+              "kind": "ambil",
+              "shipmentId": "s2",
+              "waypoint": {
+                "name": "Kemang Village",
+                "address": "Kemang Village, Jakarta",
+                "position": {
+                  "lat": -6.2608,
+                  "lng": 106.8133
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 0,
+              "legMin": 1,
+              "etaMin": 1,
+              "arriveAt": "2026-10-21T02:57:00.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 2
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 2,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            },
+            {
+              "id": "PL-2041:termurah:r2:s2",
+              "seq": 2,
+              "kind": "antar",
+              "shipmentId": "s2",
+              "waypoint": {
+                "name": "Blok M Square",
+                "address": "Blok M Square, Jakarta",
+                "position": {
+                  "lat": -6.2441,
+                  "lng": 106.7993
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 3.1,
+              "legMin": 6.5,
+              "etaMin": 11.5,
+              "arriveAt": "2026-10-21T03:07:30.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 2
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 2,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            },
+            {
+              "id": "PL-2041:termurah:r2:s3",
+              "seq": 3,
+              "kind": "ambil",
+              "shipmentId": "s3",
+              "waypoint": {
+                "name": "Blok M Square",
+                "address": "Blok M Square, Jakarta",
+                "position": {
+                  "lat": -6.2441,
+                  "lng": 106.7993
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 0,
+              "legMin": 1,
+              "etaMin": 15.5,
+              "arriveAt": "2026-10-21T03:11:30.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 3
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 3,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            },
+            {
+              "id": "PL-2041:termurah:r2:s4",
+              "seq": 4,
+              "kind": "antar",
+              "shipmentId": "s3",
+              "waypoint": {
+                "name": "Senopati",
+                "address": "Senopati, Jakarta",
+                "position": {
+                  "lat": -6.2297,
+                  "lng": 106.8137
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 2.9,
+              "legMin": 6.1,
+              "etaMin": 25.6,
+              "arriveAt": "2026-10-21T03:21:36.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 3
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 3,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            }
+          ],
+          "distanceKm": 6,
+          "durationMin": 28.6,
+          "costRp": 26000,
+          "fare": [
+            {
+              "label": {
+                "key": "srv.engine.fare.base"
+              },
+              "amountRp": 6000
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.distance",
+                "params": {
+                  "km": 5.984
+                }
+              },
+              "amountRp": 10771
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.time",
+                "params": {
+                  "min": 27.6
+                }
+              },
+              "amountRp": 4140
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.extraStops",
+                "params": {
+                  "count": 2
+                }
+              },
+              "amountRp": 5000
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.rounding"
+              },
+              "amountRp": 89
+            }
+          ],
+          "totalWeightKg": 5
+        }
+      ],
+      "totals": {
+        "costRp": 103500,
+        "distanceKm": 11,
+        "durationMin": 28.6,
+        "avgDeliveryMin": 18.4,
+        "stops": 6,
+        "motor": 1,
+        "blindvan": 1
+      },
+      "savings": {
+        "costRp": 500,
+        "pct": 0,
+        "distanceKm": 0
+      },
+      "reasons": [
+        {
+          "key": "srv.engine.reason.route",
+          "params": {
+            "n": 1,
+            "text": {
+              "key": "srv.engine.reason.vanWeight",
+              "params": {
+                "kg": 80,
+                "max": 20
+              }
+            }
+          }
+        },
+        {
+          "key": "srv.engine.reason.route",
+          "params": {
+            "n": 2,
+            "text": {
+              "key": "srv.engine.reason.fitsMotor",
+              "params": {
+                "count": 2,
+                "kg": 5
+              }
+            }
+          }
+        },
+        {
+          "key": "srv.engine.reason.costSaves",
+          "params": {
+            "cost": 103500,
+            "pct": 0,
+            "saving": 500
+          }
+        },
+        {
+          "key": "srv.engine.reason.provenOptimal",
+          "params": {
+            "count": 3
+          }
+        },
+        {
+          "key": "srv.engine.reason.splitVs",
+          "params": {
+            "count": 2,
+            "duration": 28.6,
+            "single": 42.6
+          }
+        },
+        {
+          "key": "srv.engine.reason.interleaved",
+          "params": {
+            "avg": 18.4
+          }
+        },
+        {
+          "key": "srv.engine.reason.orderRoute1",
+          "params": {
+            "steps": {
+              "key": "srv.engine.seq.then",
+              "params": {
+                "a": {
+                  "key": "srv.engine.seq.pickup",
+                  "params": {
+                    "place": "Kemang Village"
+                  }
+                },
+                "b": {
+                  "key": "srv.engine.seq.dropoff",
+                  "params": {
+                    "place": "Senayan City"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "PL-2041:terpendek",
+      "preset": "terpendek",
+      "label": {
+        "key": "dom.preset.terpendek"
+      },
+      "recommended": false,
+      "headline": {
+        "key": "srv.engine.headline",
+        "params": {
+          "count": 6,
+          "fleet": {
+            "key": "srv.engine.fleet.blindvan",
+            "params": {
+              "count": 1
+            }
+          },
+          "time": 1792553736000
+        }
+      },
+      "routes": [
+        {
+          "id": "PL-2041:terpendek:r1",
+          "planId": "PL-2041",
+          "vehicleType": "blindvan",
+          "status": "menunggu_driver",
+          "startPosition": {
+            "lat": -6.2608,
+            "lng": 106.8133
+          },
+          "startAt": "2026-10-21T02:56:00.000Z",
+          "stops": [
+            {
+              "id": "PL-2041:terpendek:r1:s1",
+              "seq": 1,
+              "kind": "ambil",
+              "shipmentId": "s1",
+              "waypoint": {
+                "name": "Kemang Village",
+                "address": "Kemang Village, Jakarta",
+                "position": {
+                  "lat": -6.2608,
+                  "lng": 106.8133
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 0,
+              "legMin": 1,
+              "etaMin": 1,
+              "arriveAt": "2026-10-21T02:57:00.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 80
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 80,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            },
+            {
+              "id": "PL-2041:terpendek:r1:s2",
+              "seq": 2,
+              "kind": "ambil",
+              "shipmentId": "s2",
+              "waypoint": {
+                "name": "Kemang Village",
+                "address": "Kemang Village, Jakarta",
+                "position": {
+                  "lat": -6.2608,
+                  "lng": 106.8133
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 0,
+              "legMin": 1,
+              "etaMin": 6,
+              "arriveAt": "2026-10-21T03:02:00.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 2
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 2,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            },
+            {
+              "id": "PL-2041:terpendek:r1:s3",
+              "seq": 3,
+              "kind": "antar",
+              "shipmentId": "s2",
+              "waypoint": {
+                "name": "Blok M Square",
+                "address": "Blok M Square, Jakarta",
+                "position": {
+                  "lat": -6.2441,
+                  "lng": 106.7993
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 3.1,
+              "legMin": 8.1,
+              "etaMin": 18.1,
+              "arriveAt": "2026-10-21T03:14:06.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 2
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 2,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            },
+            {
+              "id": "PL-2041:terpendek:r1:s4",
+              "seq": 4,
+              "kind": "ambil",
+              "shipmentId": "s3",
+              "waypoint": {
+                "name": "Blok M Square",
+                "address": "Blok M Square, Jakarta",
+                "position": {
+                  "lat": -6.2441,
+                  "lng": 106.7993
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 0,
+              "legMin": 1,
+              "etaMin": 22.1,
+              "arriveAt": "2026-10-21T03:18:06.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 3
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 3,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            },
+            {
+              "id": "PL-2041:terpendek:r1:s5",
+              "seq": 5,
+              "kind": "antar",
+              "shipmentId": "s1",
+              "waypoint": {
+                "name": "Senayan City",
+                "address": "Senayan City, Jakarta",
+                "position": {
+                  "lat": -6.2275,
+                  "lng": 106.8029
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 2.4,
+              "legMin": 6.4,
+              "etaMin": 32.5,
+              "arriveAt": "2026-10-21T03:28:30.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 80
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 80,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            },
+            {
+              "id": "PL-2041:terpendek:r1:s6",
+              "seq": 6,
+              "kind": "antar",
+              "shipmentId": "s3",
+              "waypoint": {
+                "name": "Senopati",
+                "address": "Senopati, Jakarta",
+                "position": {
+                  "lat": -6.2297,
+                  "lng": 106.8137
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 1.6,
+              "legMin": 4.1,
+              "etaMin": 39.6,
+              "arriveAt": "2026-10-21T03:35:36.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 3
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 3,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            }
+          ],
+          "distanceKm": 7.1,
+          "durationMin": 42.6,
+          "costRp": 129500,
+          "fare": [
+            {
+              "label": {
+                "key": "srv.engine.fare.base"
+              },
+              "amountRp": 45000
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.distance",
+                "params": {
+                  "km": 7.071
+                }
+              },
+              "amountRp": 31820
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.time",
+                "params": {
+                  "min": 41.6
+                }
+              },
+              "amountRp": 20800
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.extraStops",
+                "params": {
+                  "count": 4
+                }
+              },
+              "amountRp": 32000
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.rounding"
+              },
+              "amountRp": -120
+            }
+          ],
+          "totalWeightKg": 85
+        }
+      ],
+      "totals": {
+        "costRp": 129500,
+        "distanceKm": 7.1,
+        "durationMin": 42.6,
+        "avgDeliveryMin": 30.1,
+        "stops": 6,
+        "motor": 0,
+        "blindvan": 1
+      },
+      "savings": {
+        "costRp": -25500,
+        "pct": -25,
+        "distanceKm": 3.9
+      },
+      "reasons": [
+        {
+          "key": "srv.engine.reason.vanWeight",
+          "params": {
+            "kg": 85,
+            "max": 20
+          }
+        },
+        {
+          "key": "srv.engine.reason.merge",
+          "params": {
+            "base": 11,
+            "count": 1,
+            "km": 7.1,
+            "pct": 35,
+            "shipments": 3
+          }
+        },
+        {
+          "key": "srv.engine.reason.costMore",
+          "params": {
+            "cost": 129500,
+            "extra": 25500
+          }
+        },
+        {
+          "key": "srv.engine.reason.provenOptimal",
+          "params": {
+            "count": 3
+          }
+        },
+        {
+          "key": "srv.engine.reason.single",
+          "params": {
+            "duration": 42.6
+          }
+        },
+        {
+          "key": "srv.engine.reason.interleaved",
+          "params": {
+            "avg": 30.1
+          }
+        },
+        {
+          "key": "srv.engine.reason.order",
+          "params": {
+            "steps": {
+              "key": "srv.engine.seq.then",
+              "params": {
+                "a": {
+                  "key": "srv.engine.seq.pickup",
+                  "params": {
+                    "place": "Kemang Village"
+                  }
+                },
+                "b": {
+                  "key": "srv.engine.seq.then",
+                  "params": {
+                    "a": {
+                      "key": "srv.engine.seq.pickup",
+                      "params": {
+                        "place": "Kemang Village"
+                      }
+                    },
+                    "b": {
+                      "key": "srv.engine.seq.then",
+                      "params": {
+                        "a": {
+                          "key": "srv.engine.seq.dropoff",
+                          "params": {
+                            "place": "Blok M Square"
+                          }
+                        },
+                        "b": {
+                          "key": "srv.engine.seq.then",
+                          "params": {
+                            "a": {
+                              "key": "srv.engine.seq.pickup",
+                              "params": {
+                                "place": "Blok M Square"
+                              }
+                            },
+                            "b": {
+                              "key": "srv.engine.seq.then",
+                              "params": {
+                                "a": {
+                                  "key": "srv.engine.seq.dropoff",
+                                  "params": {
+                                    "place": "Senayan City"
+                                  }
+                                },
+                                "b": {
+                                  "key": "srv.engine.seq.dropoff",
+                                  "params": {
+                                    "place": "Senopati"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "PL-2041:tercepat",
+      "preset": "tercepat",
+      "label": {
+        "key": "srv.engine.label.two",
+        "params": {
+          "a": {
+            "key": "dom.preset.tercepat"
+          },
+          "b": {
+            "key": "dom.preset.seimbang"
+          }
+        }
+      },
+      "recommended": false,
+      "headline": {
+        "key": "srv.engine.headline",
+        "params": {
+          "count": 6,
+          "fleet": {
+            "key": "srv.engine.fleet.both",
+            "params": {
+              "motor": {
+                "key": "srv.engine.fleet.motor",
+                "params": {
+                  "count": 2
+                }
+              },
+              "van": {
+                "key": "srv.engine.fleet.blindvan",
+                "params": {
+                  "count": 1
+                }
+              }
+            }
+          },
+          "time": 1792552446000
+        }
+      },
+      "routes": [
+        {
+          "id": "PL-2041:tercepat:r1",
+          "planId": "PL-2041",
+          "vehicleType": "blindvan",
+          "status": "menunggu_driver",
+          "startPosition": {
+            "lat": -6.2608,
+            "lng": 106.8133
+          },
+          "startAt": "2026-10-21T02:56:00.000Z",
+          "stops": [
+            {
+              "id": "PL-2041:tercepat:r1:s1",
+              "seq": 1,
+              "kind": "ambil",
+              "shipmentId": "s1",
+              "waypoint": {
+                "name": "Kemang Village",
+                "address": "Kemang Village, Jakarta",
+                "position": {
+                  "lat": -6.2608,
+                  "lng": 106.8133
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 0,
+              "legMin": 1,
+              "etaMin": 1,
+              "arriveAt": "2026-10-21T02:57:00.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 80
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 80,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            },
+            {
+              "id": "PL-2041:tercepat:r1:s2",
+              "seq": 2,
+              "kind": "antar",
+              "shipmentId": "s1",
+              "waypoint": {
+                "name": "Senayan City",
+                "address": "Senayan City, Jakarta",
+                "position": {
+                  "lat": -6.2275,
+                  "lng": 106.8029
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 5,
+              "legMin": 13.1,
+              "etaMin": 18.1,
+              "arriveAt": "2026-10-21T03:14:06.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 80
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 80,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            }
+          ],
+          "distanceKm": 5,
+          "durationMin": 21.1,
+          "costRp": 77500,
+          "fare": [
+            {
+              "label": {
+                "key": "srv.engine.fare.base"
+              },
+              "amountRp": 45000
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.distance",
+                "params": {
+                  "km": 4.963
+                }
+              },
+              "amountRp": 22334
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.time",
+                "params": {
+                  "min": 20.1
+                }
+              },
+              "amountRp": 10050
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.rounding"
+              },
+              "amountRp": 116
+            }
+          ],
+          "totalWeightKg": 80
+        },
+        {
+          "id": "PL-2041:tercepat:r2",
+          "planId": "PL-2041",
+          "vehicleType": "motor",
+          "status": "menunggu_driver",
+          "startPosition": {
+            "lat": -6.2608,
+            "lng": 106.8133
+          },
+          "startAt": "2026-10-21T02:56:00.000Z",
+          "stops": [
+            {
+              "id": "PL-2041:tercepat:r2:s1",
+              "seq": 1,
+              "kind": "ambil",
+              "shipmentId": "s2",
+              "waypoint": {
+                "name": "Kemang Village",
+                "address": "Kemang Village, Jakarta",
+                "position": {
+                  "lat": -6.2608,
+                  "lng": 106.8133
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 0,
+              "legMin": 1,
+              "etaMin": 1,
+              "arriveAt": "2026-10-21T02:57:00.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 2
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 2,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            },
+            {
+              "id": "PL-2041:tercepat:r2:s2",
+              "seq": 2,
+              "kind": "antar",
+              "shipmentId": "s2",
+              "waypoint": {
+                "name": "Blok M Square",
+                "address": "Blok M Square, Jakarta",
+                "position": {
+                  "lat": -6.2441,
+                  "lng": 106.7993
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 3.1,
+              "legMin": 6.5,
+              "etaMin": 11.5,
+              "arriveAt": "2026-10-21T03:07:30.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 2
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 2,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            }
+          ],
+          "distanceKm": 3.1,
+          "durationMin": 14.5,
+          "costRp": 13500,
+          "fare": [
+            {
+              "label": {
+                "key": "srv.engine.fare.base"
+              },
+              "amountRp": 6000
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.distance",
+                "params": {
+                  "km": 3.094
+                }
+              },
+              "amountRp": 5569
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.time",
+                "params": {
+                  "min": 13.5
+                }
+              },
+              "amountRp": 2025
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.rounding"
+              },
+              "amountRp": -94
+            }
+          ],
+          "totalWeightKg": 2
+        },
+        {
+          "id": "PL-2041:tercepat:r3",
+          "planId": "PL-2041",
+          "vehicleType": "motor",
+          "status": "menunggu_driver",
+          "startPosition": {
+            "lat": -6.2608,
+            "lng": 106.8133
+          },
+          "startAt": "2026-10-21T02:56:00.000Z",
+          "stops": [
+            {
+              "id": "PL-2041:tercepat:r3:s1",
+              "seq": 1,
+              "kind": "ambil",
+              "shipmentId": "s3",
+              "waypoint": {
+                "name": "Blok M Square",
+                "address": "Blok M Square, Jakarta",
+                "position": {
+                  "lat": -6.2441,
+                  "lng": 106.7993
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 3.1,
+              "legMin": 6.5,
+              "etaMin": 6.5,
+              "arriveAt": "2026-10-21T03:02:30.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 3
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 3,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            },
+            {
+              "id": "PL-2041:tercepat:r3:s2",
+              "seq": 2,
+              "kind": "antar",
+              "shipmentId": "s3",
+              "waypoint": {
+                "name": "Senopati",
+                "address": "Senopati, Jakarta",
+                "position": {
+                  "lat": -6.2297,
+                  "lng": 106.8137
+                },
+                "contactName": "Kontak",
+                "contactPhone": "0812"
+              },
+              "legKm": 2.9,
+              "legMin": 6.1,
+              "etaMin": 16.6,
+              "arriveAt": "2026-10-21T03:12:36.000Z",
+              "status": "menunggu",
+              "itemsSummary": {
+                "key": "srv.engine.itemsSummary",
+                "params": {
+                  "count": 1,
+                  "kg": 3
+                }
+              },
+              "items": [
+                {
+                  "name": "Paket",
+                  "qty": 1,
+                  "detail": {
+                    "key": "dom.stopItem.detail",
+                    "params": {
+                      "h": 10,
+                      "kg": 3,
+                      "l": 30,
+                      "w": 20
+                    }
+                  },
+                  "fragile": false
+                }
+              ]
+            }
+          ],
+          "distanceKm": 2.9,
+          "durationMin": 19.6,
+          "costRp": 13000,
+          "fare": [
+            {
+              "label": {
+                "key": "srv.engine.fare.base"
+              },
+              "amountRp": 6000
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.distance",
+                "params": {
+                  "km": 2.89
+                }
+              },
+              "amountRp": 5202
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.time",
+                "params": {
+                  "min": 13.100000000000001
+                }
+              },
+              "amountRp": 1965
+            },
+            {
+              "label": {
+                "key": "srv.engine.fare.rounding"
+              },
+              "amountRp": -167
+            }
+          ],
+          "totalWeightKg": 3
+        }
+      ],
+      "totals": {
+        "costRp": 104000,
+        "distanceKm": 11,
+        "durationMin": 21.1,
+        "avgDeliveryMin": 15.4,
+        "stops": 6,
+        "motor": 2,
+        "blindvan": 1
+      },
+      "savings": {
+        "costRp": 0,
+        "pct": 0,
+        "distanceKm": 0
+      },
+      "reasons": [
+        {
+          "key": "srv.engine.reason.route",
+          "params": {
+            "n": 1,
+            "text": {
+              "key": "srv.engine.reason.vanWeight",
+              "params": {
+                "kg": 80,
+                "max": 20
+              }
+            }
+          }
+        },
+        {
+          "key": "srv.engine.reason.route",
+          "params": {
+            "n": 2,
+            "text": {
+              "key": "srv.engine.reason.fitsMotor",
+              "params": {
+                "count": 1,
+                "kg": 2
+              }
+            }
+          }
+        },
+        {
+          "key": "srv.engine.reason.route",
+          "params": {
+            "n": 3,
+            "text": {
+              "key": "srv.engine.reason.fitsMotor",
+              "params": {
+                "count": 1,
+                "kg": 3
+              }
+            }
+          }
+        },
+        {
+          "key": "srv.engine.reason.costSame",
+          "params": {
+            "cost": 104000
+          }
+        },
+        {
+          "key": "srv.engine.reason.provenOptimal",
+          "params": {
+            "count": 3
+          }
+        },
+        {
+          "key": "srv.engine.reason.splitVs",
+          "params": {
+            "count": 3,
+            "duration": 21.1,
+            "single": 42.6
+          }
+        },
+        {
+          "key": "srv.engine.reason.pickupsFirst",
+          "params": {
+            "avg": 15.4
+          }
+        },
+        {
+          "key": "srv.engine.reason.orderRoute1",
+          "params": {
+            "steps": {
+              "key": "srv.engine.seq.then",
+              "params": {
+                "a": {
+                  "key": "srv.engine.seq.pickup",
+                  "params": {
+                    "place": "Kemang Village"
+                  }
+                },
+                "b": {
+                  "key": "srv.engine.seq.dropoff",
+                  "params": {
+                    "place": "Senayan City"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "inputHash": "19aa619cd2ee50ca",
+  "method": {
+    "effort": "fast",
+    "trials": 4,
+    "proven": true,
+    "roadSource": "estimate"
+  }
+}
