@@ -1,0 +1,20 @@
+{
+  "name": "@loong/http-api",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@loong/domain": "*",
+    "@loong/gazetteer": "*",
+    "@loong/i18n": "*",
+    "@loong/mock-api": "*"
+  }
+}

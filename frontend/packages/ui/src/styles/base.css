@@ -1,0 +1,180 @@
+@layer base {
+  *,
+  *::before,
+  *::after {
+    border-color: var(--border);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button,
+  [role='button'],
+  a {
+    touch-action: manipulation;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: var(--accent-tint-strong);
+  }
+
+  /* skeleton: tak terlihat 200 ms pertama (respons cepat tidak berkedip), lalu berdenyut halus */
+  .skeleton {
+    opacity: 0;
+    background: linear-gradient(90deg, var(--gray-2) 0%, var(--gray-1) 50%, var(--gray-2) 100%);
+    background-size: 200% 100%;
+    animation:
+      skeleton-in 0s linear 200ms forwards,
+      skeleton-shimmer 1.4s ease-in-out 200ms infinite;
+  }
+  @keyframes skeleton-in {
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes skeleton-shimmer {
+    from {
+      background-position: 200% 0;
+    }
+    to {
+      background-position: -200% 0;
+    }
+  }
+
+  /* gerak overlay: masuk 220-360 ms, keluar lebih cepat (160 ms) */
+  @keyframes tip-in {
+    from {
+      opacity: 0;
+      transform: translateY(2px);
+    }
+  }
+  @keyframes overlay-in {
+    from {
+      opacity: 0;
+    }
+  }
+  @keyframes overlay-out {
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes dialog-in {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -48%) scale(0.97);
+    }
+  }
+  @keyframes dialog-out {
+    to {
+      opacity: 0;
+      transform: translate(-50%, -48%) scale(0.98);
+    }
+  }
+  @keyframes sheet-in-right {
+    from {
+      transform: translateX(24px);
+      opacity: 0;
+    }
+  }
+  @keyframes sheet-out-right {
+    to {
+      transform: translateX(24px);
+      opacity: 0;
+    }
+  }
+  @keyframes sheet-in-bottom {
+    from {
+      transform: translateY(32px);
+      opacity: 0;
+    }
+  }
+  @keyframes sheet-out-bottom {
+    to {
+      transform: translateY(32px);
+      opacity: 0;
+    }
+  }
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+  }
+  @keyframes pulse-dot {
+    0%,
+    100% {
+      box-shadow: 0 0 0 0 oklch(from var(--accent) l c h / 0.35);
+    }
+    50% {
+      box-shadow: 0 0 0 5px oklch(from var(--accent) l c h / 0);
+    }
+  }
+  @keyframes caret-blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* cetak: hanya elemen #struk yang tampil */
+  @media print {
+    body * {
+      visibility: hidden;
+    }
+    #struk,
+    #struk * {
+      visibility: visible;
+    }
+    #struk {
+      position: absolute;
+      inset: 0 auto auto 0;
+      width: 100%;
+      box-shadow: none;
+      border: 0;
+    }
+  }
+
+  /* peta: kontrol bawaan MapLibre mengikuti token */
+  .maplibregl-ctrl-attrib {
+    font-size: 0.6875rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

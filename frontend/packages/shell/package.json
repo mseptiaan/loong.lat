@@ -1,0 +1,34 @@
+{
+  "name": "@loong/shell",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Kerangka bersama tiga aplikasi: provider, gerbang koneksi, Panel Demo.",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@loong/data": "*",
+    "@loong/domain": "*",
+    "@loong/i18n": "*",
+    "@loong/mock-api": "*",
+    "@loong/ui": "*",
+    "lucide-react": "^1.60.0"
+  },
+  "peerDependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "vite": "^8.3.4"
+  }
+}

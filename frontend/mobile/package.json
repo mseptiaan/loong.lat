@@ -1,0 +1,38 @@
+{
+  "name": "@loong/mobile",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource-variable/plus-jakarta-sans": "^5.3.0",
+    "@loong/data": "*",
+    "@loong/domain": "*",
+    "@loong/gazetteer": "*",
+    "@loong/http-api": "*",
+    "@loong/i18n": "*",
+    "@loong/mock-api": "*",
+    "@loong/shell": "*",
+    "@loong/ui": "*",
+    "@tanstack/react-query": "^5.104.5",
+    "lucide-react": "^1.60.0",
+    "maplibre-gl": "^6.15.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-map-gl": "^8.1.3",
+    "react-router": "^8.5.0",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.4"
+  }
+}

@@ -1,0 +1,85 @@
+/*
+ * Memetakan token semantik ke utilitas Tailwind v4.
+ * Palet bawaan Tailwind dihapus (--color-*: initial) supaya hanya token kita yang bisa dipakai.
+ */
+@theme {
+  --color-*: initial;
+
+  --font-sans: 'Plus Jakarta Sans Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+
+  --text-caption: 0.75rem;
+  --text-caption--line-height: 1.4;
+  --text-small: 0.8125rem;
+  --text-small--line-height: 1.45;
+  --text-title: 1.125rem;
+  --text-title--line-height: 1.35;
+  --text-title--font-weight: 650;
+  --text-heading: 1.5rem;
+  --text-heading--line-height: 1.25;
+  --text-heading--letter-spacing: -0.015em;
+  --text-heading--font-weight: 700;
+  --text-display: 1.875rem;
+  --text-display--line-height: 1.15;
+  --text-display--letter-spacing: -0.02em;
+  --text-display--font-weight: 700;
+  --text-metric: 2.25rem;
+  --text-metric--line-height: 1.05;
+  --text-metric--letter-spacing: -0.025em;
+  --text-metric--font-weight: 700;
+  --text-metric-sm: 1.75rem;
+  --text-metric-sm--line-height: 1.1;
+  --text-metric-sm--letter-spacing: -0.02em;
+  --text-metric-sm--font-weight: 700;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@theme inline {
+  --text-body: var(--fs-body);
+  --text-body--line-height: var(--lh-body);
+
+  --color-white: var(--white);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-sunken: var(--surface-sunken);
+  --color-raised: var(--surface-raised);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+  --color-line-input: var(--border-input);
+
+  --color-fg: var(--text);
+  --color-muted: var(--text-muted);
+  --color-subtle: var(--text-subtle);
+  --color-disabled: var(--text-disabled);
+
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-tint: var(--accent-tint);
+  --color-accent-tint-strong: var(--accent-tint-strong);
+  --color-on-accent: var(--on-accent);
+
+  --color-success: var(--success);
+  --color-success-fg: var(--success-fg);
+  --color-warning: var(--warning);
+  --color-warning-fg: var(--warning-fg);
+  --color-danger: var(--danger);
+  --color-danger-fg: var(--danger-fg);
+  --color-success-tint: var(--success-tint);
+  --color-warning-tint: var(--warning-tint);
+  --color-danger-tint: var(--danger-tint);
+
+  --radius-input: var(--r-input);
+  --radius-card: var(--r-card);
+  --radius-modal: var(--r-modal);
+  --radius-chip: var(--r-chip);
+
+  --shadow-card: var(--sh-card);
+  --shadow-overlay: var(--sh-overlay);
+  --shadow-press: var(--sh-press);
+
+  --spacing-control: var(--control-h);
+  --spacing-row: var(--row-h);
+  --spacing-hit: var(--hit);
+  --spacing-card: var(--space-card);
+}

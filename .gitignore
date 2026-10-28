@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.vite/
+*.local
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+coverage/
+# salinan worker MapLibre, dibuat oleh frontend/scripts/sync-map-worker.mjs
+frontend/*/public/maplibre-gl-*.mjs
+playwright-report/
+test-results/
+# alamat publik halaman depan (bukan rahasia), harus ikut repo
+!frontend/landing/.env
+!frontend/landing/.env.production

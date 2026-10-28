@@ -1,0 +1,18 @@
+loong.lat
+Copyright 2026 Muhamad Septian
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Third-party trademarks and data
+-------------------------------
+The Meta and Modal logos in frontend/landing/public/brands/ are trademarks of
+their respective owners. They are shown only to credit the services this
+project uses and are not covered by the Apache License 2.0.
+
+Map data © OpenStreetMap contributors. Map tiles by OpenFreeMap.
+
+frontend/packages/gazetteer/src/places.ts (and its source cache,
+frontend/scripts/gazetteer.cache.json) contains data © OpenStreetMap
+contributors, retrieved through Nominatim, and is available under the Open
+Database License (ODbL) 1.0: https://opendatacommons.org/licenses/odbl/1-0/
+The Apache License 2.0 does not apply to that data.

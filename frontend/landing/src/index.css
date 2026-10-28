@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+@import '../../packages/ui/src/styles/index.css';
+@source '../../packages/ui/src';
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+/* Lebar bingkai hero = 60% dari versi yang menembus tepi kanan (lebar viewport / 2 + 568px), jadi isi tangkapan
+   tampil kecil tanpa ruang kosong di dalam bingkai. */
+@media (min-width: 768px) {
+  .hero-shot {
+    width: min(100%, calc(30vw + 341px));
+  }
+}
+
+/* Masuk hero: naik 8px dan muncul, 320 ms, bertahap lewat animation-delay. Tanpa gerak bila diminta. */
+@media (prefers-reduced-motion: no-preference) {
+  .enter {
+    animation: land-enter 320ms var(--ease-out) both;
+  }
+  @keyframes land-enter {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+  }
+}

@@ -1,0 +1,111 @@
+/*
+ * Token spine, 3 lapis: primitif -> semantik -> (komponen memakai semantik saja).
+ * Preset: Porcelain (soft modern). Hanya --sea-* (aksen) yang diganti dari preset: biru laut.
+ * Aturan: komponen tidak boleh memakai primitif mentah. Ubah warna di sini, bukan di komponen.
+ * Kontras diverifikasi dengan `npm run check:contrast` (APCA) dan membaca file ini langsung.
+ */
+:root {
+  color-scheme: light;
+
+  /* ---- Lapis 1: primitif ---- */
+  /* netral hangat tipis (hue ~70-80) */
+  --gray-0: oklch(98.5% 0.004 80);
+  --gray-1: oklch(96.5% 0.006 80);
+  --gray-2: oklch(92% 0.008 80);
+  --gray-3: oklch(85% 0.009 80);
+  --gray-4: oklch(76% 0.011 78);
+  --gray-5: oklch(66% 0.013 74);
+  --gray-6: oklch(54% 0.015 70);
+  --gray-7: oklch(44% 0.016 66);
+  --gray-8: oklch(33% 0.016 62);
+  --gray-9: oklch(22% 0.015 60);
+  --white: oklch(99.6% 0.002 80);
+
+  /* aksen: biru laut (hue 232). L 46% (bukan 50%) agar teks aksen di atas --bg lolos APCA Lc >= 75 */
+  --sea-500: oklch(46% 0.12 232);
+  --sea-600: oklch(41% 0.12 232);
+  --sea-tint: oklch(46% 0.12 232 / 0.09);
+  --sea-tint-strong: oklch(46% 0.12 232 / 0.18);
+
+  /* semantik fungsional (hanya untuk status) */
+  --green-500: oklch(56% 0.12 150);
+  --green-700: oklch(42% 0.1 150);
+  --amber-500: oklch(66% 0.13 80);
+  --amber-700: oklch(46% 0.1 70);
+  --red-500: oklch(54% 0.17 28);
+  --red-700: oklch(44% 0.15 28);
+
+  /* ---- Lapis 2: semantik ---- */
+  --bg: var(--gray-1);
+  --surface: var(--white);
+  --surface-sunken: var(--gray-1);
+  --surface-raised: var(--white);
+  --border: var(--gray-2);
+  --border-strong: var(--gray-3);
+  --border-input: var(--gray-5);
+
+  --text: var(--gray-9);
+  --text-muted: var(--gray-7);
+  --text-subtle: var(--gray-6);
+  --text-disabled: var(--gray-5);
+
+  --accent: var(--sea-500);
+  --accent-hover: var(--sea-600);
+  --accent-tint: var(--sea-tint);
+  --accent-tint-strong: var(--sea-tint-strong);
+  --on-accent: var(--gray-0);
+
+  --success: var(--green-500);
+  --success-fg: var(--green-700);
+  --warning: var(--amber-500);
+  --warning-fg: var(--amber-700);
+  --danger: var(--red-500);
+  --danger-fg: var(--red-700);
+  --success-tint: oklch(56% 0.12 150 / 0.1);
+  --warning-tint: oklch(66% 0.13 80 / 0.14);
+  --danger-tint: oklch(54% 0.17 28 / 0.09);
+
+  /* bentuk & kedalaman */
+  --r-input: 0.625rem;
+  --r-card: 0.875rem;
+  --r-modal: 1.25rem;
+  --r-chip: 0.5rem;
+  --sh-card: 0 1px 2px oklch(30% 0.02 60 / 0.06), 0 4px 12px oklch(30% 0.02 60 / 0.06);
+  --sh-overlay: 0 2px 4px oklch(30% 0.02 60 / 0.08), 0 16px 40px oklch(30% 0.02 60 / 0.14);
+  --sh-press: 0 1px 1px oklch(30% 0.02 60 / 0.1);
+
+  /* gerak: keluar lebih cepat dari masuk, semuanya <= 400ms */
+  --motion-fast: 140ms;
+  --motion-base: 220ms;
+  --motion-slow: 360ms;
+  --motion-exit: 160ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* kepadatan (default = nyaman, dipakai Dashboard) */
+  --control-h: 2.5rem;
+  --row-h: 3rem;
+  --fs-body: 0.9375rem;
+  --lh-body: 1.55;
+  --space-card: 1.25rem;
+  --hit: 2.75rem;
+}
+
+/* Backoffice: padat (VISUAL_DENSITY 8) */
+[data-density='compact'] {
+  --control-h: 2rem;
+  --row-h: 2.5rem;
+  --fs-body: 0.8125rem;
+  --lh-body: 1.45;
+  --space-card: 1rem;
+  --hit: 2rem;
+}
+
+/* Driver: satu tangan, target sentuh besar */
+[data-density='touch'] {
+  --control-h: 3.25rem;
+  --row-h: 4rem;
+  --fs-body: 1rem;
+  --lh-body: 1.5;
+  --space-card: 1.25rem;
+  --hit: 3rem;
+}

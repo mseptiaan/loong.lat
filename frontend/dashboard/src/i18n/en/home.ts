@@ -1,0 +1,36 @@
+/** dash.home.* */
+export const enDashHome = {
+  'dash.home.greeting': 'Hello, {name}',
+  'dash.home.greetingAnon': 'Hello there',
+  'dash.home.lead': 'What are you sending today? Add several parcels at once so routes can be combined and cost less.',
+  'dash.home.welcomeTitle': 'Your account is ready',
+  'dash.home.welcomeText': 'Welcome! Try creating your first delivery, complete with route comparisons.',
+
+  'dash.home.activeTitle': 'Active deliveries',
+  'dash.home.activeEmptyTitle': 'No active deliveries yet',
+  'dash.home.activeEmptyHint': 'Deliveries in progress appear here with a map and estimated arrival.',
+  'dash.home.draftsTitle': 'Resume drafts',
+  'dash.home.recentTitle': 'Recent deliveries',
+  'dash.home.viewAll': 'View all',
+  'dash.home.recentEmptyTitle': 'No history yet',
+  'dash.home.recentEmptyHint': 'Your confirmed deliveries will appear here.',
+
+  'dash.home.summaryLabel': 'Summary',
+  'dash.home.savingsTitle': 'Savings',
+  'dash.home.savingsEmptyTitle': 'No data yet',
+  'dash.home.savingsEmptyHint': 'Savings from combined routes are calculated once your first delivery is complete.',
+  'dash.home.savedMonth': 'Saved this month',
+  'dash.home.savedMonthHint_one': 'from {count} completed delivery, compared with sending separately',
+  'dash.home.savedMonthHint_other': 'from {count} completed deliveries, compared with sending separately',
+  'dash.home.savedMonthNone': 'No completed deliveries this month',
+  'dash.home.completedCount': 'Completed deliveries',
+  'dash.home.avgSavings': 'Average savings',
+  'dash.home.avgSavingsHint': 'across all completed deliveries',
+
+  'dash.home.onboardTitle': 'Get started in 3 steps',
+  'dash.home.onboardProgress': '{done} of {total} completed',
+  'dash.home.onboardDismiss': 'Dismiss guide',
+  'dash.home.stepFirst': 'Create your first delivery',
+  'dash.home.stepAddress': 'Save a favorite address (home, shop)',
+  'dash.home.stepTrack': 'Track a delivery until it’s complete',
+} as const

@@ -1,0 +1,14 @@
+{
+  "name": "loong.lat Driver",
+  "short_name": "Driver",
+  "description": "The loong.lat driver app: see your jobs, the pickup and drop-off order, and finish each stop with one swipe.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f3ef",
+  "theme_color": "#f6f3ef",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

@@ -1,0 +1,7 @@
+/*
+ * Titik masuk gaya bersama. Setiap app mengimpor ini SETELAH `@import "tailwindcss"`
+ * dan menambahkan `@source` ke packages/ui/src agar kelas di komponen ikut dipindai.
+ */
+@import './tokens.css';
+@import './theme.css';
+@import './base.css';

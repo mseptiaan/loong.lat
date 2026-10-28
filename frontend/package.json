@@ -1,0 +1,47 @@
+{
+  "name": "loong-lat-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "loong.lat: halaman depan dan tiga aplikasi frontend (dashboard, backoffice, driver) yang berjalan tanpa backend.",
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "dashboard",
+    "backoffice",
+    "mobile",
+    "api",
+    "landing",
+    "packages/*"
+  ],
+  "scripts": {
+    "postinstall": "node scripts/sync-map-worker.mjs",
+    "predev": "node scripts/sync-map-worker.mjs",
+    "prebuild": "node scripts/sync-map-worker.mjs",
+    "dev:http": "VITE_API_MODE=http VITE_SIMULATE_PAYMENTS=1 npm run dev",
+    "dev": "concurrently -k -n gateway,landing,console,backoffice,driver,api -c gray,cyan,blue,magenta,green,yellow \"node scripts/dev-gateway.mjs\" \"npm -w @loong/landing run dev\" \"npm -w @loong/dashboard run dev\" \"npm -w @loong/backoffice run dev\" \"npm -w @loong/mobile run dev\" \"npm -w @loong/api-host run dev\"",
+    "build": "npm -w @loong/landing run build && npm -w @loong/dashboard run build && npm -w @loong/backoffice run build && npm -w @loong/mobile run build && npm -w @loong/api-host run build && node scripts/assemble-dist.mjs",
+    "preview": "node scripts/dev-gateway.mjs --dist",
+    "typecheck": "npm --workspaces --if-present run typecheck",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "build:brand": "node scripts/build-brand.mjs",
+    "check:contrast": "node scripts/check-contrast.mjs",
+    "check:i18n": "node scripts/check-i18n.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.0",
+    "@types/node": "^26.6.5",
+    "apca-w3": "^0.1.9",
+    "colorjs.io": "^0.7.1",
+    "concurrently": "^10.0.6",
+    "eslint": "^10.13.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.13.0",
+    "http-proxy": "^1.18.1",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.0",
+    "vitest": "^5.0.5"
+  }
+}

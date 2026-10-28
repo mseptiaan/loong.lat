@@ -1,0 +1,137 @@
+/** ai.*: jawaban Copilot tiruan (jejak alat, markdown, tindakan, pertanyaan awal). Dibuat dalam bahasa permintaan. */
+export const enCopilot = {
+  /* ---------- pembantu bersama ---------- */
+  'ai.driverFallback': 'Driver',
+  'ai.plans_one': '{count} plan',
+  'ai.plans_other': '{count} plans',
+  'ai.stops_one': '{count} stop',
+  'ai.stops_other': '{count} stops',
+  'ai.optionsTarget_one': '{count} option',
+  'ai.optionsTarget_other': '{count} options',
+
+  /* ---------- tindakan yang diusulkan ---------- */
+  'ai.action.chooseOption': 'Choose {label}',
+  'ai.action.applyBestDriver': 'Apply the best driver suggestion',
+  'ai.action.open': 'Open {code}',
+
+  /* ---------- pertanyaan awal ---------- */
+  'ai.starter.whyRecommended': 'Why was this option recommended?',
+  'ai.starter.compareAll': 'Compare all options',
+  'ai.starter.faster': 'What if I want it faster?',
+  'ai.starter.whyOnlyOne': 'Why is there only one option?',
+  'ai.starter.costBreakdown': 'Cost breakdown',
+  'ai.starter.whatToDo': 'What do I need to do?',
+  'ai.starter.bestDriver': 'Who is the best driver?',
+  'ai.starter.whyLate': 'Why is it late?',
+  'ai.starter.whenArrive': 'When will the parcel arrive?',
+
+  /* ---------- jejak alat umum ---------- */
+  'ai.tool.readPlan': 'Reading the plan',
+  'ai.tool.readOptions': 'Reading route options',
+  'ai.tool.optionCount': 'options: {count}',
+  'ai.tool.statusOnly': 'status: {status}',
+  'ai.tool.planRoutes': 'plan: {code}\nroutes: {count}',
+  'ai.route.head': '**Route {n}**',
+  'ai.route.headVehicle': '**Route {n}** ({vehicle})',
+
+  /* ---------- menjelaskan opsi ---------- */
+  'ai.copilot.explain.recommended': '**{label}** is the option I recommend for the **{priority}** priority.',
+  'ai.copilot.explain.chosen': '**{label}** is the option you chose for the **{priority}** priority.',
+  'ai.copilot.explain.summary': 'In short: {distance|km} with {vehicles}; parcels arrive {avg|duration} after departure on average.',
+  'ai.copilot.explain.faster': 'If time matters more: **{label}** arrives {minutes|duration} sooner on average, for an extra {extra|rupiah}.',
+  'ai.copilot.explain.cheaper': 'If cost matters more: **{label}** is {saving|rupiah} cheaper, but parcels arrive {minutes|duration} later on average.',
+  'ai.copilot.explain.readPlanDetail': 'plan: {code}\npriority: {priority}\nshipments: {count}',
+  'ai.copilot.explain.readOptionsDetail': 'options: {options}\nbaseline: {cost|rupiah} · {distance|km}',
+  'ai.copilot.explain.traceReasons': 'Tracing the reasons',
+
+  /* ---------- membandingkan opsi ---------- */
+  'ai.copilot.compare.single': 'Only **one** option makes sense: **{label}**, {cost|rupiah}, {distance|km}, done in {duration|duration}.',
+  'ai.copilot.compare.singleHint': 'With a single shipment there is nothing to combine or split. Add another shipment to see a comparison.',
+  'ai.copilot.compare.singleDetail': 'options: 1\n{label}',
+  'ai.copilot.compare.header': '| Option | Cost | Distance | Total time | Avg. arrival | Vehicles |\n| --- | --- | --- | --- | --- | --- |',
+  'ai.copilot.compare.chosen': '(chosen)',
+  'ai.copilot.compare.summary': 'Cheapest: **{cheapest}**. Shortest: **{shortest}**. Parcels arrive soonest: **{fastest}**.',
+  'ai.copilot.compare.compareTitle': 'Comparing cost, distance, and time',
+  'ai.copilot.compare.compareDetail': 'cheapest: {cheapest}\nshortest: {shortest}\nfastest: {fastest}',
+
+  /* ---------- paling cepat, murah, pendek ---------- */
+  'ai.copilot.extreme.sortBy.cepat': 'Sorting by average arrival',
+  'ai.copilot.extreme.sortBy.murah': 'Sorting by cost',
+  'ai.copilot.extreme.sortBy.pendek': 'Sorting by distance',
+  'ai.copilot.extreme.alreadyBest.cepat': 'The chosen option, **{label}**, is already the fastest: average arrival **{value|duration}**.',
+  'ai.copilot.extreme.alreadyBest.murah': 'The chosen option, **{label}**, is already the cheapest: cost **{value|rupiah}**.',
+  'ai.copilot.extreme.alreadyBest.pendek': 'The chosen option, **{label}**, is already the shortest: distance **{value|km}**.',
+  'ai.copilot.extreme.best.cepat': 'The fastest is **{best}**: {gain}, with {price} compared to **{current}**.',
+  'ai.copilot.extreme.best.murah': 'The cheapest is **{best}**: {gain}, with {price} compared to **{current}**.',
+  'ai.copilot.extreme.best.pendek': 'The shortest is **{best}**: {gain}, with {price} compared to **{current}**.',
+  'ai.copilot.extreme.numbers': 'Full numbers: {cost|rupiah}, {distance|km}, done in {duration|duration}.',
+  'ai.copilot.extreme.gain.cepat': 'parcels arrive **{value|duration}** sooner on average',
+  'ai.copilot.extreme.gain.pendek': 'the distance is **{value|km}** shorter',
+  'ai.copilot.extreme.gain.murah': 'it costs **{value|rupiah}** less',
+  'ai.copilot.extreme.price.later': 'parcels arriving {value|duration} later on average',
+  'ai.copilot.extreme.price.sooner': 'parcels arriving {value|duration} sooner on average',
+  'ai.copilot.extreme.price.more': '{value|rupiah} extra cost',
+  'ai.copilot.extreme.price.less': '{value|rupiah} lower cost',
+  'ai.copilot.extreme.price.same': 'the same cost',
+
+  /* ---------- status dan perkiraan tiba ---------- */
+  'ai.copilot.status.cancelled': '{code} was cancelled.',
+  'ai.copilot.status.cancelledReason': '{code} was cancelled: {reason}',
+  'ai.copilot.status.readPlanDetail': 'plan: {code}\nstatus: {status}\nroutes: {count}',
+  'ai.copilot.status.doneAt': 'finished at {time|time}, {stops}.',
+  'ai.copilot.status.done': 'finished, {stops}.',
+  'ai.copilot.status.recalcEta': 'Recalculating the estimated arrival',
+  'ai.copilot.status.recalcDetail': 'route: {route}\nstops done: {done}/{total}\nlast ETA: {eta}',
+  'ai.copilot.status.progress_one': '{done} of {count} stop done',
+  'ai.copilot.status.progress_other': '{done} of {count} stops done',
+  'ai.copilot.status.runningNamed': '**{driver}** is on the way, {progress}.',
+  'ai.copilot.status.runningUnnamed': 'The driver is on the way, {progress}.',
+  'ai.copilot.status.nextPickup': 'Next: pickup at **{place}**, arriving around **{time|time}**.',
+  'ai.copilot.status.nextDropoff': 'Next: drop-off at **{place}**, arriving around **{time|time}**.',
+  'ai.copilot.status.allDone': 'All stops will be done around {time|time}.',
+  'ai.copilot.status.assigned': '**{driver}** has been assigned and will leave around {time|time}.',
+  'ai.copilot.status.searching': 'still looking for a driver.',
+  'ai.copilot.status.bestCandidate': 'Best candidate: **{driver}** ({distance|km} from the pickup point).',
+
+  /* ---------- keterlambatan dan masalah ---------- */
+  'ai.copilot.late.checkSchedule': "Checking the schedule against the driver's position",
+  'ai.copilot.late.checkDetail': 'route: {route}\ndelay: {delay|duration}\nnext stop: {stop}',
+  'ai.copilot.late.routeN': 'Route {n}',
+  'ai.copilot.late.thisRoute': 'This route',
+  'ai.copilot.late.delayed_one': '{label} is **{count} minute** late.',
+  'ai.copilot.late.delayed_other': '{label} is **{count} minutes** late.',
+  'ai.copilot.late.delayedEta_one': '{label} is **{count} minute** late; it reaches {stop} around {eta|time} (originally {planned|time}).',
+  'ai.copilot.late.delayedEta_other': '{label} is **{count} minutes** late; it reaches {stop} around {eta|time} (originally {planned|time}).',
+  'ai.copilot.late.problemStop': 'Stop {seq} at **{place}** was marked as a problem.',
+  'ai.copilot.late.problemStopIssue': 'Stop {seq} at **{place}** was marked as a problem: {issue}.',
+  'ai.copilot.late.adviceDriver': 'Contact **{driver}** ({phone|phone}) to check on them. If the delay is more than 20 minutes, contact the recipient to reschedule.',
+  'ai.copilot.late.adviceStop': 'Follow up on stop {seq}: contact {contact} ({phone|phone}) and arrange a redelivery.',
+  'ai.copilot.late.none': 'There are no delays or problems with this order. All stops are on schedule.',
+  'ai.copilot.late.adviceCustomer': "You don't need to do anything. The estimated arrival has been recalculated, and you'll be notified if anything changes again.",
+
+  /* ---------- driver ---------- */
+  'ai.copilot.driver.assigned_one': '**{driver}**, {vehicle}, rating {rating|decimal2} across {count|number} route.',
+  'ai.copilot.driver.assigned_other': '**{driver}**, {vehicle}, rating {rating|decimal2} across {count|number} routes.',
+  'ai.copilot.driver.rateCandidates': 'Scoring driver candidates',
+  'ai.copilot.driver.candidateLine': '{driver}: score {score}, {distance|km}',
+  'ai.copilot.driver.noCandidates': 'no candidates',
+  'ai.copilot.driver.candidates_one': '{count} candidate',
+  'ai.copilot.driver.candidates_other': '{count} candidates',
+  'ai.copilot.driver.suggest': 'no driver yet. My suggestion is **{driver}** ({plate}): {reasons}.',
+  'ai.copilot.driver.weak': 'no driver yet, and the available candidates are a poor fit. The best right now is **{driver}** ({plate}): {reason}. Consider waiting for another driver to come online.',
+  'ai.copilot.driver.noneAdmin': 'no driver yet; no candidate is available right now.',
+  'ai.copilot.driver.noneCustomer': 'no driver yet; we are finding the nearest one.',
+
+  /* ---------- biaya ---------- */
+  'ai.copilot.cost.readFare': 'Reading the fare breakdown',
+  'ai.copilot.cost.readFareDetail': 'routes: {count}\ntotal: {total|rupiah}',
+  'ai.copilot.cost.subtotal': 'Subtotal: **{amount|rupiah}**',
+  'ai.copilot.cost.total': 'Total **{amount|rupiah}**.',
+
+  /* ---------- di luar kemampuan dan keadaan khusus ---------- */
+  'ai.copilot.help.intro': "I can help explain route choices, compare options, check status and delays, and break down costs. I can't answer that question from this order's data yet.",
+  'ai.copilot.help.tryAsking': 'Try asking:',
+  'ai.copilot.noOptions.detail': 'plan: {code}\noptions: not calculated yet',
+  'ai.copilot.noOptions.text': "The route options for this delivery haven't been calculated yet. Finish the previous step, then ask again.",
+  'ai.copilot.notConfirmed.text': "This delivery isn't confirmed yet, so there's no driver or route in progress. Confirm it first to see its progress.",
+} as const

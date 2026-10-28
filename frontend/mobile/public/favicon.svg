@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="loong.lat">
+<title>loong.lat</title>
+<rect width="64" height="64" rx="18" fill="#00618f"/>
+<g fill="none">
+  <path d="M11 32a13 13 0 1 0 26 0a13 13 0 1 0 -26 0" stroke="#fbfaf7" stroke-width="5"/>
+  <path d="M27 32a13 13 0 1 0 26 0a13 13 0 1 0 -26 0" stroke="#fbfaf7" stroke-width="5"/>
+  <path d="M28.52 25.89A13 13 0 0 1 36.86 19.39" stroke="#00618f" stroke-width="9"/>
+  <path d="M28.13 26.71A13 13 0 0 1 37.75 19.2" stroke="#fbfaf7" stroke-width="5"/>
+  <path d="M35.48 38.11A13 13 0 0 1 27.14 44.61" stroke="#00618f" stroke-width="9"/>
+  <path d="M35.87 37.29A13 13 0 0 1 26.25 44.8" stroke="#fbfaf7" stroke-width="5"/>
+</g>
+</svg>
